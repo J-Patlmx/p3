@@ -1,0 +1,240 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  z-index: 10;
+  padding: 16px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  font-family: Shrikhand, "cursive";
+  margin: 0;
+  text-align: center;
+}
+
+#localisation {
+  display: flex;
+  justify-content: center;
+  background-color: #d3d3d3;
+  position: relative;
+  align-items: center;
+  gap: 16px;
+  font-family: "Shrikhand", cursive;
+}
+#localisationi {
+  font-weight: 900;
+}
+
+.reserved-menu {
+  text-align: center;
+  background-color: #f3f3f3;
+  padding: 16px;
+}
+.reserved-menu .degrade {
+  background-image: linear-gradient(#FF79DA, rgb(147, 86, 220));
+  border-radius: 32px;
+  padding: 18px 32px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+.reserved-menu .degrade:hover {
+  transform: scale(1.02);
+}
+
+.step {
+  border: 1px solid #f3f3f3;
+  background-color: whitesmoke;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  margin-left: 16px;
+  display: flex;
+  gap: 32px;
+  padding: 24px;
+  border-radius: 24px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+}
+.step:hover {
+  background-color: rgba(146, 86, 220, 0.336);
+  color: rgb(147, 86, 220);
+}
+
+.purpule-circle {
+  border: 1px solid rgb(147, 86, 220);
+  border-radius: 100%;
+  width: 19px;
+  height: 19px;
+  background-color: rgb(147, 86, 220);
+  margin-left: -32px;
+}
+
+.stepNumber {
+  position: relative;
+  top: -16px;
+  left: 5px;
+  color: white;
+}
+
+/* RESTAURANT*/
+.titleofrestaurantsection {
+  width: 100%;
+}
+
+.link-restaurants {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-cards {
+  display: block;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+  margin-bottom: 32px;
+  border-radius: 16px;
+  height: 100%;
+  margin: 16px;
+}
+.restaurant-cards .imgRestaurants {
+  width: 100%;
+  height: 192px;
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+}
+.restaurant-cards .infoCards {
+  display: flex;
+  flex: 3;
+  align-items: center;
+  padding-left: 16px;
+}
+.restaurant-cards .infoCards-WithoutHeart {
+  flex: 2;
+  line-height: 0;
+}
+.restaurant-cards .fa-regular {
+  flex: 1;
+  color: white;
+  content: "\f004";
+  font-weight: bold;
+  transition: color 1s ease-out;
+  filter: drop-shadow(1px 1px 1px grey);
+  text-align: right;
+  padding-right: 16px;
+}
+.restaurant-cards .fa-regular:hover {
+  color: rgb(147, 86, 220);
+  cursor: pointer;
+}
+
+.status {
+  position: absolute;
+  text-align: center;
+  color: #53b99f;
+  background-color: #99E2D0;
+  margin-left: 66%;
+  margin-right: auto;
+  padding-top: 1.7%;
+  padding-bottom: 1.7%;
+  padding-left: 2.2%;
+  padding-right: 2.2%;
+  border-radius: 6px;
+}
+.status::before {
+  content: "Nouveau";
+}
+
+.statusOff {
+  display: none;
+}
+
+.titleof-infoCards1::after {
+  content: "La palette du goût";
+  font-weight: bold;
+}
+
+.cityof-infocards1::after {
+  content: "Ménilmontant";
+}
+
+.titleof-infoCards2::after {
+  content: "La note enchantée";
+  font-weight: bold;
+}
+
+.cityof-infocards2::after {
+  content: "Charonne";
+}
+
+.titleof-infoCards3::after {
+  content: "À la française";
+  font-weight: bold;
+}
+
+.cityof-infocards3::after {
+  content: "Cité Rouge";
+}
+
+.titleof-infoCards4::after {
+  content: "Le délice des sens";
+  font-weight: bold;
+}
+
+.cityof-infocards4::after {
+  content: "Folie-Méricourt";
+}
+
+/*ANIMATION COEUR */
+footer {
+  background-color: rgb(94, 93, 93);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  font-size: 12px;
+}
+footer #titleOf-Footer {
+  font-family: Shrikhand, "cursive";
+  font-size: 16px;
+}
+footer #propose {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: -16px;
+}
+footer #propose:hover {
+  color: #FF79DA;
+}
+footer #partnership {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: -16px;
+}
+footer #partnership:hover {
+  color: #FF79DA;
+}
+footer #legal {
+  margin-bottom: 4px;
+}
+footer #legal:hover {
+  color: #FF79DA;
+}
+footer #contactFooter {
+  margin-bottom: 32px;
+  text-decoration: none;
+  color: white;
+}
+footer #contactFooter:hover {
+  color: #FF79DA;
+}
+
+/*# sourceMappingURL=style.css.map */
