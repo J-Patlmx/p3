@@ -45,7 +45,7 @@ header .fa-arrow-left {
   padding: 16px;
 }
 .reserved-menu .degrade {
-  background-image: linear-gradient(#FF79DA, rgb(147, 86, 220));
+  background-image: linear-gradient(#ff79da, rgb(147, 86, 220));
   border-radius: 32px;
   padding: 18px 32px;
   color: white;
@@ -141,7 +141,7 @@ header .fa-arrow-left {
   transition: 1s ease-out;
 }
 #Restaurant .restaurant-cards .fa-regular:hover {
-  color: #FF79DA;
+  color: #ff79da;
   font-weight: bold;
   cursor: pointer;
 }
@@ -149,7 +149,7 @@ header .fa-arrow-left {
   position: absolute;
   text-align: center;
   color: #53b99f;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   margin-left: 66%;
   margin-right: auto;
   padding-top: 1.7%;
@@ -195,8 +195,8 @@ header .fa-arrow-left {
 
 /*RESTAURANT 1 LA PALETTE DU GOÛT */
 #enTeteresto1 {
-  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  height: 201px;
+  background: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  height: 200px;
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -225,7 +225,7 @@ header .fa-arrow-left {
   transition: 1s ease-out;
 }
 #What-do-u-want-to-eat #title-of-Resto1 .fa-regular:hover {
-  color: #FF79DA;
+  color: #ff79da;
   font-weight: bold;
   cursor: pointer;
 }
@@ -240,7 +240,7 @@ header .fa-arrow-left {
   border-radius: 16px;
 }
 #What-do-u-want-to-eat .choice:hover {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   cursor: pointer;
 }
 #What-do-u-want-to-eat .title-Choice {
@@ -248,7 +248,7 @@ header .fa-arrow-left {
   font-weight: bolder;
 }
 #What-do-u-want-to-eat .degrade {
-  background-image: linear-gradient(#FF79DA, rgb(147, 86, 220));
+  background-image: linear-gradient(#ff79da, rgb(147, 86, 220));
   border-radius: 32px;
   color: white;
   font-size: 16px;
@@ -274,7 +274,7 @@ header .fa-arrow-left {
   content: "";
   width: 50px;
   height: 8px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   position: absolute;
   margin: 0;
 }
@@ -301,7 +301,7 @@ footer #propose {
   margin-bottom: -16px;
 }
 footer #propose:hover {
-  color: #FF79DA;
+  color: #ff79da;
 }
 footer #partnership {
   display: flex;
@@ -310,13 +310,13 @@ footer #partnership {
   margin-bottom: -16px;
 }
 footer #partnership:hover {
-  color: #FF79DA;
+  color: #ff79da;
 }
 footer #legal {
   margin-bottom: 4px;
 }
 footer #legal:hover {
-  color: #FF79DA;
+  color: #ff79da;
 }
 footer #contactFooter {
   margin-bottom: 32px;
@@ -324,7 +324,7 @@ footer #contactFooter {
   color: white;
 }
 footer #contactFooter:hover {
-  color: #FF79DA;
+  color: #ff79da;
 }
 
 /*# sourceMappingURL=style.css.map */

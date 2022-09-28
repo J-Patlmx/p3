@@ -1,146 +1,144 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/apple.png">
-    <script
-      src="https://kit.fontawesome.com/2c2fa63a1f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css">
-    <title>oMyFood!</title>
-  </head>
-  <body>
-    <header>
-      <h1>ohmyfood</h1>
-    </header>
-    <div id="localisation">
-      <i class="fa-solid fa-location-dot"></i>
-      <p>Paris, Belleville</p>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="images/apple.png">
+  <script src="https://kit.fontawesome.com/2c2fa63a1f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>oMyFood!</title>
+</head>
+
+<body>
+  <header>
+    <h1>ohmyfood</h1>
+  </header>
+  <div id="localisation">
+    <i class="fa-solid fa-location-dot"></i>
+    <p>Paris, Belleville</p>
+  </div>
+  <section class="reserved-menu">
+    <h2>
+      Réservez le menu qui <br>
+      vous convient
+    </h2>
+    <p>
+      Découvrez des restaurants d'exception,<br>
+      séléctionnés par nos soins
+    </p>
+    <input class="degrade" type="button" value="Explorer nos restaurants">
+  </section>
+  <section class="fonctionnement">
+    <h3 id="titleofFonctionSection">Fonctionnement</h3>
+    <div id="step">
+      <div class="step step1">
+        <div class="purpule-circle">
+          <p class="stepNumber">1</p>
+        </div>
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <div class="title-step">Choissisez un restaurant</div>
+      </div>
+      <div class="step step2">
+        <div class="purpule-circle">
+          <p class="stepNumber">2</p>
+        </div>
+        <i class="fa-solid fa-list"></i>
+        <div class="title-step">Composez votre menu</div>
+      </div>
+      <div class="step step3">
+        <div class="purpule-circle">
+          <p class="stepNumber">3</p>
+        </div>
+        <i class="fa-solid fa-store"></i>
+        <div class="title-step">Dégustez au restaurant</div>
+      </div>
     </div>
-    <section class="reserved-menu">
-      <h2>
-        Réservez le menu qui <br>
-        vous convient
-      </h2>
-      <p>
-        Découvrez des restaurants d'exception,<br>
-        séléctionnés par nos soins
-      </p>
-      <input class="degrade" type="button" value="Explorer nos restaurants">
-    </section>
-    <section class="fonctionnement">
-      <h3 id="titleofFonctionSection">Fonctionnement</h3>
-      <div id="step">
-        <div class="step step1">
-          <div class="purpule-circle"><p class="stepNumber">1</p></div>
-          <i class="fa-solid fa-mobile-screen-button"></i>
-          <div class="title-step">Choissisez un restaurant</div>
+  </section>
+  <section class="Restaurant" id="Restaurant">
+    <h3 id="titleofrestaurantsection">Restaurant</h3>
+    <div class="restaurant-cards">
+      <a class="link-restaurants" href="restaurant/la_palette_du_gout.html">
+        <p class="status"></p>
+        <img class="imgRestaurants" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          alt="vue plongeante sur une assiette composée de saumon et de salade">
+        <div class="infoCards">
+          <div class="infoCards-WithoutHeart">
+            <p class="titleof-infoCards1"></p>
+            <p class="cityof-infocards1"></p>
+          </div>
+          <i class="fa-regular fa-heart halfHeart"></i>
         </div>
-        <div class="step step2">
-          <div class="purpule-circle"><p class="stepNumber">2</p></div>
-          <i class="fa-solid fa-list"></i>
-          <div class="title-step">Composez votre menu</div>
+      </a>
+    </div>
+    <!--  -->
+    <div class="restaurant-cards">
+      <a class="link-restaurants" href="restaurant/la_note_enchantee.html">
+        <p class="status"></p>
+        <img class="imgRestaurants" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+          alt=" vue de dessus sur une assiete composée dun plat mijoter au potentiel saveur meditarenene">
+        <div class="infoCards">
+          <div class="infoCards-WithoutHeart">
+
+            <p class="titleof-infoCards2"></p>
+            <p class="cityof-infocards2"></p>
+          </div>
+          <i class="fa-regular fa-heart halfHeart"></i>
         </div>
-        <div class="step step3">
-          <div class="purpule-circle"><p class="stepNumber">3</p></div>
-          <i class="fa-solid fa-store"></i>
-          <div class="title-step">Dégustez au restaurant</div>
+      </a>
+    </div>
+
+    <!--  -->
+    <div class="restaurant-cards">
+      <a class="link-restaurants" href="restaurant/a_la_francaise.html">
+        <p class="status statusOff"></p>
+        <img class="imgRestaurants" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          alt="vue plongeante sur une assiette composée d' oeufs pochee et depinard delicatement posee sur une tarine de pain frotez à l'ail">
+        <div class="infoCards">
+          <div class="infoCards-WithoutHeart">
+
+            <p class="titleof-infoCards3"></p>
+            <p class="cityof-infocards3"></p>
+          </div>
+
+          <i class="fa-regular fa-heart halfHeart"></i>
         </div>
-      </div>
-    </section>
-    <section class="Restaurant" id="Restaurant">
-      <h3 id="titleofrestaurantsection">Restaurant</h3>
-      <div class="restaurant-cards">
-        <a class="link-restaurants" href="restaurant/la_palette_du_gout.html">
-          <p class="status"></p>
-          <img
-            class="imgRestaurants"
-            src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-            alt="vue plongeante sur une assiette composée de saumon et de salade">
-          <div class="infoCards">
-            <div class="infoCards-WithoutHeart">
-              <p class="titleof-infoCards1"></p>
-              <p class="cityof-infocards1"></p>
-            </div>
-            <i class="fa-regular fa-heart halfHeart"></i>
+      </a>
+    </div>
+    <!--  -->
+    <div class="restaurant-cards">
+      <a class="link-restaurants" href="restaurant/le_delice_des_sens.html">
+        <p class="status statusOff"></p>
+        <img class="imgRestaurants" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+          alt="vue plongeante sur un plat avec dlieu jaune et ses petit legumes cuisson façon tajine de mere grand">
+        <div class="infoCards">
+          <div class="infoCards-WithoutHeart">
+
+            <p class="titleof-infoCards4"></p>
+            <p class="cityof-infocards4"></p>
           </div>
-        </a>
-      </div>
-      <!--  -->
-      <div class="restaurant-cards">
-        <a class="link-restaurants" href="restaurant/la_note_enchantee.html">
-          <p class="status"></p>
-          <img
-            class="imgRestaurants"
-            src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-            alt=" vue de dessus sur une assiete composée dun plat mijoter au potentiel saveur meditarenene">
-          <div class="infoCards">
-            <div class="infoCards-WithoutHeart">
 
-              <p class="titleof-infoCards2"></p>
-              <p class="cityof-infocards2"></p>
-            </div>
-            <i class="fa-regular fa-heart halfHeart"></i>
-          </div>
-        </a>
-      </div>
+          <i class="fa-regular fa-heart halfHeart"></i>
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <p id="titleOf-Footer">ohmyfood</p>
+    <div id="propose">
+      <i class="fa-solid fa-utensils"></i>
+      <p>Proposer un restaurant</p>
+    </div>
+    <div id="partnership">
+      <i class="fa-solid fa-handshake"></i>
+      <p>Devenir partenaire</p>
+    </div>
+    <p id="legal">Mentions légales</p>
+    <a id="contactFooter" href="mailto:devdread@gmail.com">Contact</a>
+  </footer>
+</body>
 
-      <!--  -->
-      <div class="restaurant-cards">
-        <a class="link-restaurants" href="restaurant/a_la_francaise.html">
-          <p class="status statusOff"></p>
-          <img
-            class="imgRestaurants"
-            src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-            alt="vue plongeante sur une assiette composée d' oeufs pochee et depinard delicatement posee sur une tarine de pain frotez à l'ail">
-          <div class="infoCards">
-            <div class="infoCards-WithoutHeart">
-
-              <p class="titleof-infoCards3"></p>
-              <p class="cityof-infocards3"></p>
-            </div>
-
-            <i class="fa-regular fa-heart halfHeart"></i>
-          </div>
-        </a>
-      </div>
-      <!--  -->
-      <div class="restaurant-cards">
-        <a class="link-restaurants" href="restaurant/le_delice_des_sens.html">
-          <p class="status statusOff"></p>
-          <img
-            class="imgRestaurants"
-            src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-            alt="vue plongeante sur un plat avec dlieu jaune et ses petit legumes cuisson façon tajine de mere grand">
-          <div class="infoCards">
-            <div class="infoCards-WithoutHeart">
-
-              <p class="titleof-infoCards4"></p>
-              <p class="cityof-infocards4"></p>
-            </div>
-
-            <i class="fa-regular fa-heart halfHeart"></i>
-          </div>
-        </a>
-      </div>
-    </section>
-    <!-- FOOTER -->
-    <footer>
-      <p id="titleOf-Footer">ohmyfood</p>
-      <div id="propose">
-        <i class="fa-solid fa-utensils"></i>
-        <p>Proposer un restaurant</p>
-      </div>
-      <div id="partnership">
-        <i class="fa-solid fa-handshake"></i>
-        <p>Devenir partenaire</p>
-      </div>
-      <p id="legal">Mentions légales</p>
-      <a id="contactFooter" href="mailto:devdread@gmail.com">Contact</a>
-    </footer>
-  </body>
 </html>
