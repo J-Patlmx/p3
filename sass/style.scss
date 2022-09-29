@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
-$color-violetprimaire: rgb(147, 86, 220);
+$color-violetprimaire: #9356dc;
 $color-rosesecondaire: #ff79da;
 $color-verttertiaire: #99e2d0;
 $color-grisbackground: #d3d3d3;
@@ -9,6 +9,63 @@ body {
   font-family: Roboto, sans-serif;
   margin: 0;
 }
+/*ANIMATION LOADING
+
+.Loader-bounce-jp {
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  // background-color: white;
+  // opacity: 0.7;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: $color-violetprimaire;
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle 0.5s alternate 6 ease;
+}
+
+@keyframes circle {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scale(1.7);
+  }
+
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scale(1);
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+.circle:nth-child(1) {
+  left: 45%;
+  animation-delay: 0.2s;
+  background-color: $color-rosesecondaire;
+}
+
+.circle:nth-child(2) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+  background-color: $color-verttertiaire;
+}
+
+ FIN ANIMATION LOADING*/
 
 header {
   display: flex;
@@ -96,7 +153,7 @@ header {
 
   .stepNumber {
     position: relative;
-    top: -16px;
+
     left: 5px;
     color: white;
   }
@@ -205,19 +262,49 @@ header {
     content: ("Folie-Méricourt");
   }
 }
-/*RESTAURANT 1 LA PALETTE DU GOÛT */
+/*RESTAURANT 1 la palette du goût*/
 #enTeteresto1 {
   background: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   height: 200px;
   background-size: 100%;
   background-repeat: no-repeat;
 }
+/*FIN RESTAURANT 1 la palette du goût*/
+
+/*FIN RESTAURANT 2 la note enchantée */
+#enTeteresto2 {
+  background: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  height: 200px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+/*FIN RESTAURANT 2 la note enchantée */
+
+/*RESTAURANT 3 a la française */
+#enTeteresto3 {
+  background: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  height: 200px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+/*FIN RESTAURANT 3 a la française */
+
+/* RESTAURANT 4 le delice des sens */
+#enTeteresto4 {
+  background: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  height: 200px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+/*FIN RESTAURANT 4 le delice des sens */
+
+/* GENERAL STYLE OF RESTAURANT SECTION*/
 #What-do-u-want-to-eat {
   background-color: $color-grisbackground;
   position: relative;
   width: 100%;
   border-radius: 32px 32px 0 0;
-  & #title-of-Resto1 {
+  & #title-of-Resto {
     font-family: "Shrikhand", cursive;
     font-size: 20px;
     font-style: italic;
@@ -242,15 +329,18 @@ header {
   & .choice {
     background-color: white;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
     margin: 8px;
     padding-left: 8px;
+    padding-right: 8px;
+
     border-radius: 16px;
     &:hover {
-      background-color: $color-verttertiaire;
+      background-color: red;
       cursor: pointer;
+      /*      TODO        @keyframe transform xy */
     }
   }
   & .title-Choice {
@@ -276,7 +366,7 @@ header {
       transform: scale(1.02);
     }
   }
-  .testH4 {
+  .green-Line-deco {
     padding-bottom: 8px;
     padding-left: 8px;
     & h4 {
@@ -293,7 +383,6 @@ header {
   }
 }
 
-/*FIN RESTAURANT 1 LA PALETTE DU GOÛT */
 footer {
   background-color: rgb(94, 93, 93);
   color: white;
