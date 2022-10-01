@@ -206,12 +206,12 @@ header .fa-arrow-left {
   text-align: center;
   color: #53b99f;
   background-color: #99e2d0;
-  margin-left: 66%;
+  margin-left: 230px;
   margin-right: auto;
-  padding-top: 1.7%;
-  padding-bottom: 1.7%;
-  padding-left: 2.2%;
-  padding-right: 2.2%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 6px;
 }
 #Restaurant .status::before {
@@ -249,42 +249,14 @@ header .fa-arrow-left {
   content: "Folie-Méricourt";
 }
 
-/*RESTAURANT 1 la palette du goût*/
-#enTeteresto1 {
-  background: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+/*RESTAURANT*/
+.enTeteresto {
   height: 200px;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-/*FIN RESTAURANT 1 la palette du goût*/
-/*FIN RESTAURANT 2 la note enchantée */
-#enTeteresto2 {
-  background: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-  height: 200px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-/*FIN RESTAURANT 2 la note enchantée */
-/*RESTAURANT 3 a la française */
-#enTeteresto3 {
-  background: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-  height: 200px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-/*FIN RESTAURANT 3 a la française */
-/* RESTAURANT 4 le delice des sens */
-#enTeteresto4 {
-  background: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-  height: 200px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-/*FIN RESTAURANT 4 le delice des sens */
 /* GENERAL STYLE OF RESTAURANT SECTION*/
 #What-do-u-want-to-eat {
   background-color: #d3d3d3;
@@ -326,7 +298,8 @@ header .fa-arrow-left {
   border-radius: 16px;
 }
 #What-do-u-want-to-eat .choice:hover {
-  background-color: red;
+  background-color: #99e2d0;
+  opacity: 0.7;
   cursor: pointer;
   /*      TODO        @keyframe transform xy */
 }
