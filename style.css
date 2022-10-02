@@ -57,6 +57,19 @@
 }
 
 /*FIN ANIMATION LOADING*/
+.degrade {
+  background-image: linear-gradient(#ff79da, #9356dc);
+  border-radius: 32px;
+  padding: 18px 32px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+.degrade:hover {
+  transform: scale(1.02);
+}
+
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
