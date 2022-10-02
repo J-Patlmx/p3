@@ -1,4 +1,5 @@
-comprendre pourquoi mon pretier a peter un cable (potentiellemnt du a la maj du 23/09/2022)
+
 sass reele utilite ? mieux en css pur avec le recul ? 
 gerer les animations (bien plus dur en css quant js ) ? dont givup the fight
 remplacer ma section fonctionement par une ol li ? 
+ /*TODO faire disparaitre lanimation Loader-bounce-jp une fois terminer*/
