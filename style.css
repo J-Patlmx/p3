@@ -10,8 +10,7 @@
   transform-origin: top;
   animation: magic-disappearance 0.9ms 3s forwards;
 }
-
-.Loader-bounce-jp {
+.loader .Loader-bounce-jp {
   width: 200px;
   height: 100px;
   position: inherit;
@@ -19,8 +18,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
-.circle {
+.loader .circle {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -32,6 +30,14 @@
   /*TODO faire disparaitre lanimation une fois terminer*/
 }
 
+@keyframes magic-disappearance {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 @keyframes circle {
   0% {
     top: 60px;
@@ -61,14 +67,6 @@
   background-color: #99e2d0;
 }
 
-@keyframes magic-disappearance {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
 /*FIN ANIMATION LOADING*/
 .degrade {
   background-image: linear-gradient(#ff79da, #9356dc);

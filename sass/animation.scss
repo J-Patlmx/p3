@@ -8,26 +8,34 @@
   opacity: 0.9;
   transform-origin: top;
   animation: magic-disappearance 0.9ms 3s forwards;
-}
-.Loader-bounce-jp {
-  width: 200px;
-  height: 100px;
-  position: inherit;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  .Loader-bounce-jp {
+    width: 200px;
+    height: 100px;
+    position: inherit;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $color-violetprimaire;
+    left: 15%;
+    transform-origin: 50%;
+    animation: circle 0.5s alternate 6 ease-in-out;
+    /*TODO faire disparaitre lanimation une fois terminer*/
+  }
 }
 
-.circle {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  border-radius: 50%;
-  background-color: $color-violetprimaire;
-  left: 15%;
-  transform-origin: 50%;
-  animation: circle 0.5s alternate 6 ease-in-out;
-  /*TODO faire disparaitre lanimation une fois terminer*/
+@keyframes magic-disappearance {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
 }
 
 @keyframes circle {
@@ -60,13 +68,5 @@
   right: 15%;
   animation-delay: 0.3s;
   background-color: $color-verttertiaire;
-}
-@keyframes magic-disappearance {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
 }
 /*FIN ANIMATION LOADING*/
