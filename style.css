@@ -68,6 +68,31 @@
 }
 
 /*FIN ANIMATION LOADING*/
+/*ANIMATION CHARGEMENT MENU*/
+.choice {
+  animation: here-is-the-menu 1s;
+}
+
+@keyframes here-is-the-menu {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*
+.1st-Choice {
+  animation: here-is-the-menu 1s;
+  animation-delay: 0.5s;
+}
+.2nd-Choice {
+  animation: here-is-the-menu 1s;
+  animation-delay: 1s;
+}*/
+/*FIN ANIMATION CHARGEMENT MENU*/
+/*ANIMATION CHARGEMENT MENU*/
+/*FIN ANIMATION CHARGEMENT MENU*/
 .degrade {
   background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 32px;
