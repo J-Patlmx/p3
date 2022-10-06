@@ -53,7 +53,7 @@ header {
     background-color: $color-grisbackground;
     &::placeholder {
       font-weight: bolder;
-      font-size: 20px;
+      font-size: 19px;
       color: black;
       opacity: 1;
     }
@@ -256,7 +256,7 @@ header {
     align-items: flex-end;
     justify-content: space-between;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
-    margin: 8px;
+    margin: 10px;
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 16px;
@@ -264,6 +264,7 @@ header {
   & .title-Choice {
     font-size: 16px;
     font-weight: bolder;
+    line-height: 1px;
   }
   & .degrade {
     background-image: linear-gradient(
@@ -289,6 +290,8 @@ header {
     padding-left: 8px;
     & h4 {
       margin: 0;
+      font-size: 18px;
+      font-weight: 400;
     }
     &::after {
       content: "";

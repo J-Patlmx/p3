@@ -102,33 +102,25 @@
 
 .choice-check {
   display: flex;
-  position: relative;
-  right: 0;
-  border: 2px solid transparent;
   padding: 27px 15px 27px 15px;
-  overflow: hidden;
   background-color: $color-verttertiaire;
-  width: 0;
 
   &:hover {
-    width: 10%;
-    right: 0;
-    position: absolute;
-    z-index: 1;
+    transform: rotate(0turn);
   }
   .fa-circle-check {
-    background-color: white;
+    background-color: whitesmoke;
     color: $color-verttertiaire;
     border-radius: 50%;
+    display: flex;
     font-size: 32px;
     text-align: center;
     align-items: center;
     justify-content: center;
     transform: rotate(1turn);
     &:hover {
-      color: red;
-      transform: rotate(0deg);
-      transition-duration: 0.6s;
+      transform: rotate(0);
+      transition-duration: 0.4s;
     }
   }
 }
