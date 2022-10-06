@@ -201,33 +201,16 @@ header {
     display: none;
   }
   .titleof-infoCards1::after {
-    content: ("La palette du goût");
     font-weight: bold;
   }
-  .cityof-infocards1::after {
-    content: ("Ménilmontant");
-  }
-
   .titleof-infoCards2::after {
-    content: ("La note enchantée");
     font-weight: bold;
-  }
-  .cityof-infocards2::after {
-    content: ("Charonne");
   }
   .titleof-infoCards3::after {
-    content: ("À la française");
     font-weight: bold;
-  }
-  .cityof-infocards3::after {
-    content: ("Cité Rouge");
   }
   .titleof-infoCards4::after {
-    content: ("Le délice des sens");
     font-weight: bold;
-  }
-  .cityof-infocards4::after {
-    content: ("Folie-Méricourt");
   }
 }
 
