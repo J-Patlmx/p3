@@ -74,27 +74,93 @@
 /*ANIMATION CHARGEMENT MENU*/
 
 .choice {
-  animation: here-is-the-menu 1s;
+  animation: here-is-the-menu 3s;
+  &.delayChoiceB {
+    animation-delay: 0.3s;
+  }
+  &.delayChoiceC {
+    animation-delay: 0.6s;
+  }
+  &.delayChoiceD {
+    animation-delay: 0.9s;
+  }
 }
 
 @keyframes here-is-the-menu {
   0% {
-    transform: scale(0);
+    transform: translateY(50px);
   }
+
   100% {
-    transform: scale(1);
+    transform: translateY(0);
   }
 }
 /*
-.1st-Choice {
-  animation: here-is-the-menu 1s;
-  animation-delay: 0.5s;
-}
-.2nd-Choice {
-  animation: here-is-the-menu 1s;
-  animation-delay: 1s;
-}*/
 /*FIN ANIMATION CHARGEMENT MENU*/
 
-/*ANIMATION CHARGEMENT MENU*/
-/*FIN ANIMATION CHARGEMENT MENU*/
+/*ANIMATION CHECK MENU*/
+
+.choice-check {
+  display: flex;
+  position: relative;
+  right: 0;
+  border: 2px solid transparent;
+  padding: 27px 15px 27px 15px;
+  overflow: hidden;
+  background-color: $color-verttertiaire;
+  width: 0;
+
+  &:hover {
+    width: 10%;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  .fa-circle-check {
+    background-color: white;
+    color: $color-verttertiaire;
+    border-radius: 50%;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(1turn);
+    &:hover {
+      color: red;
+      transform: rotate(0deg);
+      transition-duration: 0.6s;
+    }
+  }
+}
+
+/*FIN ANIMATION CHECK MENU*/
+/*
+.choice-check {
+  display: block;
+  position: absolute;
+  padding: 27px 15px 27px 15px;
+  right: 0px;
+  width: 0;
+  transform: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition-duration: 2s;
+  cursor: pointer;
+  &:hover {
+    display: block;
+    padding-right: 8px;
+    width: 15%;
+    border-radius: 0 16px 16px 0;
+    background-color: $color-verttertiaire;
+  }
+  .fa-circle-check {
+    border-radius: 50%;
+    font-size: 32px;
+    background-color: ghostwhite;
+    color: $color-verttertiaire;
+    transform: rotate(-1turn);
+    animation-fill-mode: forwards;
+    &:hover {
+      transform: rotate(0deg);
+      transition-duration: 0.6s;
+    }
+  }
+}*/

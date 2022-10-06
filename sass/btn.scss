@@ -8,8 +8,12 @@
   color: white;
   font-size: 18px;
   border: none;
+  box-shadow: 4px 6px 8px gray;
+  filter: contrast(110%);
   cursor: pointer;
   &:hover {
     transform: scale(1.02);
+    filter: contrast(150%);
+    box-shadow: 4px 6px 8px rgb(158, 155, 155);
   }
 }

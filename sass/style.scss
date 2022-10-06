@@ -34,6 +34,10 @@ header {
 }
 
 #localisation {
+  height: 50px;
+  padding-top: 8px;
+
+  padding-bottom: 8px;
   display: flex;
   justify-content: center;
   background-color: $color-grisbackground;
@@ -44,12 +48,31 @@ header {
   &i {
     font-weight: 900;
   }
+  #inputForm-localisation {
+    border: none;
+    background-color: $color-grisbackground;
+    &::placeholder {
+      font-weight: bolder;
+      font-size: 20px;
+      color: black;
+      opacity: 1;
+    }
+  }
 }
 
 .reserved-menu {
   text-align: center;
   background-color: $color-grisclairebackground;
   padding: 16px;
+  padding-bottom: 64px;
+  #reserved-menu-tittle {
+    font-size: 32px;
+  }
+  #reserved-menu-subTitle {
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: 300;
+  }
   & .degrade {
     background-image: linear-gradient(
       $color-rosesecondaire,
@@ -207,6 +230,7 @@ header {
     content: ("Folie-Méricourt");
   }
 }
+
 /*RESTAURANT*/
 .enTeteresto {
   height: 200px;
@@ -221,7 +245,7 @@ header {
   position: relative;
   width: 100%;
   border-radius: 32px 32px 0 0;
-  & #title-of-Resto {
+  #title-of-Resto {
     font-family: "Shrikhand", cursive;
     font-size: 20px;
     font-style: italic;
@@ -231,7 +255,7 @@ header {
     padding-left: 16px;
     margin-bottom: 0;
     margin-top: -32px;
-    & .fa-regular {
+    .fa-regular {
       position: absolute;
       right: 10%;
       color: black;
@@ -252,14 +276,7 @@ header {
     margin: 8px;
     padding-left: 8px;
     padding-right: 8px;
-
     border-radius: 16px;
-    &:hover {
-      background-color: $color-verttertiaire;
-      opacity: 0.7;
-      cursor: pointer;
-      /*      TODO        @keyframe transform xy */
-    }
   }
   & .title-Choice {
     font-size: 16px;
