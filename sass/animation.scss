@@ -101,12 +101,27 @@
 /*ANIMATION CHECK MENU*/
 
 .choice-check {
-  display: flex;
-  padding: 27px 15px 27px 15px;
+  position: absolute;
+  text-align: center;
+  right: -100px;
+  width: 100px;
+  height: 90px;
   background-color: $color-verttertiaire;
-
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s ease-in-out;
+  border-radius: 0 16px 16px 0;
   &:hover {
-    transform: rotate(0turn);
+    right: 0px;
+    transition: 0.7s ease-in-out;
+    z-index: 2;
+    border: 2 px solid red;
+  }
+  &::after.price {
+    position: absolute;
+    right: 100px;
   }
   .fa-circle-check {
     background-color: whitesmoke;

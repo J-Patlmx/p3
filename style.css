@@ -93,12 +93,28 @@
 /*FIN ANIMATION CHARGEMENT MENU*/
 /*ANIMATION CHECK MENU*/
 .choice-check {
-  display: flex;
-  padding: 27px 15px 27px 15px;
+  position: absolute;
+  text-align: center;
+  right: -100px;
+  width: 100px;
+  height: 90px;
   background-color: #99e2d0;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s ease-in-out;
+  border-radius: 0 16px 16px 0;
 }
 .choice-check:hover {
-  transform: rotate(0turn);
+  right: 0px;
+  transition: 0.7s ease-in-out;
+  z-index: 2;
+  border: 2 px solid red;
+}
+.choice-check::after.price {
+  position: absolute;
+  right: 100px;
 }
 .choice-check .fa-circle-check {
   background-color: whitesmoke;
@@ -182,6 +198,7 @@ header h1 {
   font-family: Shrikhand, "cursive";
   margin: 0;
   text-align: center;
+  font-size: 32px;
 }
 header .fa-arrow-left {
   flex: 1;
