@@ -28,7 +28,6 @@
     /*TODO faire disparaitre lanimation une fois terminer*/
   }
 }
-
 @keyframes magic-disappearance {
   0% {
     transform: scale(1);
@@ -37,7 +36,6 @@
     transform: scale(0);
   }
 }
-
 @keyframes circle {
   0% {
     top: 60px;
@@ -56,7 +54,6 @@
     top: 0%;
   }
 }
-
 .circle:nth-child(1) {
   left: 45%;
   animation-delay: 0.2s;
@@ -74,7 +71,7 @@
 /*ANIMATION CHARGEMENT MENU*/
 
 .choice {
-  animation: here-is-the-menu 3s;
+  animation: here-is-the-menu 2s;
   &.delayChoiceB {
     animation-delay: 0.3s;
   }
@@ -85,7 +82,6 @@
     animation-delay: 0.9s;
   }
 }
-
 @keyframes here-is-the-menu {
   0% {
     transform: translateY(50px);
@@ -101,73 +97,57 @@
 /*ANIMATION CHECK MENU*/
 
 .choice-check {
-  position: absolute;
-  text-align: center;
-  right: -100px;
-  width: 100px;
-  height: 90px;
   background-color: $color-verttertiaire;
-  transition: 1s;
   display: flex;
+  width: 0;
+  height: 90px;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  transition: 0.7s ease-in-out;
   border-radius: 0 16px 16px 0;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  margin-right: 0px;
+}
+.choice:hover .choice-check {
+  width: 60px;
+}
+.choice-check::after.price {
+  position: absolute;
+  right: 100px;
+}
+.first-Choice {
+  flex: 1;
+  padding-left: 10px;
+}
+.second-Choice {
+  flex: 1;
+  padding-left: 10px;
+}
+.third-Choice {
+  flex: 1;
+  padding-left: 10px;
+}
+.fourth-Choice {
+  flex: 1;
+  padding-left: 10px;
+}
+.price {
+  padding-right: 10px;
+}
+.fa-circle-check {
+  background-color: whitesmoke;
+  color: $color-verttertiaire;
+  border-radius: 50%;
+  display: flex;
+  font-size: 32px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(1turn);
   &:hover {
-    right: 0px;
-    transition: 0.7s ease-in-out;
-    z-index: 2;
-    border: 2 px solid red;
-  }
-  &::after.price {
-    position: absolute;
-    right: 100px;
-  }
-  .fa-circle-check {
-    background-color: whitesmoke;
-    color: $color-verttertiaire;
-    border-radius: 50%;
-    display: flex;
-    font-size: 32px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(1turn);
-    &:hover {
-      transform: rotate(0);
-      transition-duration: 0.4s;
-    }
+    transform: rotate(0);
+    transition-duration: 0.4s;
   }
 }
-
 /*FIN ANIMATION CHECK MENU*/
-/*
-.choice-check {
-  display: block;
-  position: absolute;
-  padding: 27px 15px 27px 15px;
-  right: 0px;
-  width: 0;
-  transform: cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  transition-duration: 2s;
-  cursor: pointer;
-  &:hover {
-    display: block;
-    padding-right: 8px;
-    width: 15%;
-    border-radius: 0 16px 16px 0;
-    background-color: $color-verttertiaire;
-  }
-  .fa-circle-check {
-    border-radius: 50%;
-    font-size: 32px;
-    background-color: ghostwhite;
-    color: $color-verttertiaire;
-    transform: rotate(-1turn);
-    animation-fill-mode: forwards;
-    &:hover {
-      transform: rotate(0deg);
-      transition-duration: 0.6s;
-    }
-  }
-}*/
