@@ -541,9 +541,6 @@ body {
   #Restaurant #titleofrestaurantsection {
     text-align: center;
   }
-  #Restaurant .status {
-    right: 48px;
-  }
   footer {
     flex-direction: row;
     justify-content: space-around;
@@ -567,9 +564,6 @@ body {
   }
 }
 @media (min-width: 1024px) {
-  #restaurant .status {
-    right: 64px;
-  }
   #step {
     display: flex;
     align-items: center;
@@ -577,7 +571,7 @@ body {
   }
   #step .step {
     flex: 1;
-    padding: 10px;
+    padding: 24px;
   }
 }
 
