@@ -155,23 +155,6 @@
 }
 
 /*FIN ANIMATION CHECK MENU*/
-.degrade {
-  background-image: linear-gradient(#ff79da, #9356dc);
-  border-radius: 32px;
-  padding: 18px 32px;
-  color: white;
-  font-size: 18px;
-  border: none;
-  box-shadow: 4px 6px 8px gray;
-  filter: contrast(110%);
-  cursor: pointer;
-}
-.degrade:hover {
-  transform: scale(1.02);
-  filter: contrast(150%);
-  box-shadow: 4px 6px 8px rgb(158, 155, 155);
-}
-
 header {
   display: flex;
   align-items: center;
@@ -249,10 +232,14 @@ header .fa-arrow-left {
   color: white;
   font-size: 18px;
   border: none;
+  box-shadow: 4px 6px 8px gray;
+  filter: contrast(110%);
   cursor: pointer;
 }
 .reserved-menu .degrade:hover {
   transform: scale(1.02);
+  filter: contrast(150%);
+  box-shadow: 4px 6px 8px rgb(158, 155, 155);
 }
 
 .fonctionnement #titleofFonctionSection {
@@ -421,17 +408,21 @@ header .fa-arrow-left {
 #What-do-u-want-to-eat .degrade {
   background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 32px;
+  padding: 18px 32px;
   color: white;
+  font-size: 18px;
   border: none;
-  padding: 8px 16px;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  position: relative;
-  left: 30%;
+  box-shadow: 4px 6px 8px gray;
+  filter: contrast(110%);
   cursor: pointer;
+  padding: 8px 16px;
+  display: flex;
+  /* Center le btn*/
 }
 #What-do-u-want-to-eat .degrade:hover {
   transform: scale(1.02);
+  filter: contrast(150%);
+  box-shadow: 4px 6px 8px rgb(158, 155, 155);
 }
 #What-do-u-want-to-eat .green-Line-deco {
   padding-bottom: 8px;

@@ -12,18 +12,6 @@
     font-weight: 300;
   }
   & .degrade {
-    background-image: linear-gradient(
-      $color-rosesecondaire,
-      $color-violetprimaire
-    );
-    border-radius: 32px;
-    padding: 18px 32px;
-    color: white;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    &:hover {
-      transform: scale(1.02);
-    }
+    @include btn;
   }
 }

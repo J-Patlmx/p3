@@ -1,8 +1,12 @@
-.degrade {
+@mixin bg--gradient {
   background-image: linear-gradient(
     $color-rosesecondaire,
     $color-violetprimaire
   );
+}
+
+@mixin btn {
+  @include bg--gradient;
   border-radius: 32px;
   padding: 18px 32px;
   color: white;

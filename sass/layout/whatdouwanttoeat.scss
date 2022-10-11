@@ -42,22 +42,12 @@
     line-height: 0px;
   }
   & .degrade {
-    background-image: linear-gradient(
-      $color-rosesecondaire,
-      $color-violetprimaire
-    );
-    border-radius: 32px;
-    color: white;
-    border: none;
+    @include btn;
     padding: 8px 16px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    position: relative;
-    left: 30%;
-    cursor: pointer;
-    &:hover {
-      transform: scale(1.02);
-    }
+    display: flex;
+    /* Center le btn*/
+    // align-items: center;
+    // justify-content: center;
   }
   .green-Line-deco {
     padding-bottom: 8px;
