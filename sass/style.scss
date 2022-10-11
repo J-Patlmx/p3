@@ -48,9 +48,6 @@ body {
     #titleofrestaurantsection {
       text-align: center;
     }
-    .status {
-      right: 48px;
-    }
   }
   footer {
     flex-direction: row;
@@ -80,9 +77,6 @@ body {
 }
 @media (min-width: 1024px) {
   #restaurant {
-    .status {
-      right: 64px;
-    }
   }
   #step {
     display: flex;
@@ -90,7 +84,7 @@ body {
     justify-content: center;
     .step {
       flex: 1;
-      padding: 10px;
+      padding: 24px;
     }
   }
 }
