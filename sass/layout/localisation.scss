@@ -1,0 +1,26 @@
+#localisation {
+  height: 50px;
+  padding-top: 8px;
+
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  background-color: $color-grisbackground;
+  position: relative;
+  align-items: center;
+  gap: 16px;
+  font-family: "Shrikhand", cursive;
+  &i {
+    font-weight: 900;
+  }
+  #inputForm-localisation {
+    border: none;
+    background-color: $color-grisbackground;
+    &::placeholder {
+      font-weight: bolder;
+      font-size: 19px;
+      color: black;
+      opacity: 1;
+    }
+  }
+}

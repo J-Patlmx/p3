@@ -1,0 +1,88 @@
+/* GENERAL STYLE OF RESTAURANT SECTION*/
+#What-do-u-want-to-eat {
+  background-color: $color-grisbackground;
+  position: relative;
+  width: 100%;
+  border-radius: 32px 32px 0 0;
+  #title-of-Resto {
+    font-family: "Shrikhand", cursive;
+    font-size: 20px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 16px;
+    margin-bottom: 0;
+    margin-top: -32px;
+    .fa-regular {
+      position: absolute;
+      right: 10%;
+      color: black;
+      transition: 1s ease-out;
+      &:hover {
+        color: $color-rosesecondaire;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+  & .choice {
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+    margin: 10px;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  & .title-Choice {
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 0px;
+  }
+  & .degrade {
+    background-image: linear-gradient(
+      $color-rosesecondaire,
+      $color-violetprimaire
+    );
+    border-radius: 32px;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    position: relative;
+    left: 30%;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  .green-Line-deco {
+    padding-bottom: 8px;
+    padding-left: 8px;
+    & h4 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    &::after {
+      content: "";
+      width: 50px;
+      height: 8px;
+      background-color: $color-verttertiaire;
+      position: absolute;
+      margin: 0;
+    }
+  }
+}
+
+.point-of-omission {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  word-wrap: break-Word;
+  font-size: 14px;
+}

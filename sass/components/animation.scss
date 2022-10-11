@@ -25,7 +25,6 @@
     left: 15%;
     transform-origin: 50%;
     animation: circle 0.5s alternate 6 ease-in-out;
-    /*TODO faire disparaitre lanimation une fois terminer*/
   }
 }
 @keyframes magic-disappearance {
@@ -145,6 +144,7 @@
   align-items: center;
   justify-content: center;
   transform: rotate(1turn);
+
   &:hover {
     transform: rotate(0);
     transition-duration: 0.4s;

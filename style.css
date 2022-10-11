@@ -26,7 +26,6 @@
   left: 15%;
   transform-origin: 50%;
   animation: circle 0.5s alternate 6 ease-in-out;
-  /*TODO faire disparaitre lanimation une fois terminer*/
 }
 
 @keyframes magic-disappearance {
@@ -173,11 +172,6 @@
   box-shadow: 4px 6px 8px rgb(158, 155, 155);
 }
 
-body {
-  font-family: Roboto, sans-serif;
-  margin: 0;
-}
-
 header {
   display: flex;
   align-items: center;
@@ -198,6 +192,14 @@ header .fa-arrow-left {
   color: black;
   font-weight: 900;
   font-size: 24px;
+}
+
+/* CE JOINS AU HEADER DANS WDUWTE RESTAURANT*/
+.enTeteresto {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 #localisation {
@@ -272,6 +274,7 @@ header .fa-arrow-left {
 .fonctionnement .step:hover {
   background-color: rgba(146, 86, 220, 0.336);
   color: #9356dc;
+  border: 1px solid transparent;
 }
 .fonctionnement .purpule-circle {
   border: 1px solid #9356dc;
@@ -340,20 +343,19 @@ header .fa-arrow-left {
   font-weight: bold;
   cursor: pointer;
 }
-#Restaurant .status {
+#Restaurant .restaurant-cards .status {
   position: absolute;
   text-align: center;
   color: #53b99f;
   background-color: #99e2d0;
-  margin-left: 230px;
-  margin-right: auto;
+  right: 32px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 6px;
 }
-#Restaurant .status::before {
+#Restaurant .restaurant-cards .status::before {
   content: "Nouveau";
 }
 #Restaurant .statusOff {
@@ -370,14 +372,6 @@ header .fa-arrow-left {
 }
 #Restaurant .titleof-infoCards4::after {
   font-weight: bold;
-}
-
-/*RESTAURANT*/
-.enTeteresto {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 /* GENERAL STYLE OF RESTAURANT SECTION*/
@@ -417,6 +411,7 @@ header .fa-arrow-left {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
   margin: 10px;
   border-radius: 16px;
+  cursor: pointer;
 }
 #What-do-u-want-to-eat .title-Choice {
   font-size: 16px;
@@ -510,6 +505,80 @@ footer #contactFooter {
 }
 footer #contactFooter:hover {
   color: #ff79da;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ TODO:  *media queries a finir pour le choix des restos
+        *une fois fini les mettre dans le bon dossier
+*/
+@media (min-width: 768px) {
+  #titleofFonctionSection {
+    text-align: center;
+  }
+  #step {
+    display: flex;
+    padding-left: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  #step .step {
+    flex: 1;
+    gap: 10px;
+    padding: 10px;
+  }
+  #Restaurant {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+  #Restaurant #titleofrestaurantsection {
+    text-align: center;
+  }
+  #Restaurant .status {
+    right: 48px;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer #titleOf-Footer {
+    font-size: 18px;
+  }
+  footer #propose {
+    margin-bottom: 0;
+  }
+  footer #partnership {
+    margin-bottom: 0;
+  }
+  footer #legal {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  footer #contactFooter {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  #restaurant .status {
+    right: 64px;
+  }
+  #step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #step .step {
+    flex: 1;
+    padding: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

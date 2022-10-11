@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  padding: 16px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+  h1 {
+    flex: 2;
+    font-family: Shrikhand, "cursive";
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+  }
+  .fa-arrow-left {
+    flex: 1;
+    color: black;
+    font-weight: 900;
+    font-size: 24px;
+  }
+}
+/* CE JOINS AU HEADER DANS WDUWTE RESTAURANT*/
+.enTeteresto {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}

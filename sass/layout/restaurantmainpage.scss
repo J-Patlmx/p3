@@ -1,0 +1,85 @@
+/* RESTAURANT*/
+#Restaurant {
+  background-color: $color-grisclairebackground;
+  padding-bottom: 32px;
+  & #titleofrestaurantsection {
+    padding-left: 16px;
+    padding-top: 16px;
+    margin-bottom: 0;
+  }
+
+  .link-restaurants {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurant-cards {
+    background-color: white;
+    display: block;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+    margin-bottom: 32px;
+    border-radius: 16px;
+    height: 100%;
+    margin: 16px;
+    .imgRestaurants {
+      width: 100%;
+      height: 192px;
+      border-radius: 16px 16px 0 0;
+      object-fit: cover;
+      object-position: center;
+    }
+    .infoCards {
+      display: flex;
+      flex: 3;
+      align-items: center;
+      padding-left: 16px;
+    }
+    .infoCards-WithoutHeart {
+      flex: 2;
+      line-height: 0;
+    }
+    .fa-regular {
+      position: absolute;
+      right: 10%;
+      color: black;
+      transition: 1s ease-out;
+      &:hover {
+        color: $color-rosesecondaire;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+    .status {
+      position: absolute;
+      text-align: center;
+      color: #53b99f;
+      background-color: $color-verttertiaire;
+      right: 32px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 6px;
+      &::before {
+        content: ("Nouveau");
+      }
+    }
+  }
+
+  .statusOff {
+    display: none;
+  }
+  .titleof-infoCards1::after {
+    font-weight: bold;
+  }
+  .titleof-infoCards2::after {
+    font-weight: bold;
+  }
+  .titleof-infoCards3::after {
+    font-weight: bold;
+  }
+  .titleof-infoCards4::after {
+    font-weight: bold;
+  }
+}

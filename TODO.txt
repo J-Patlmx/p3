@@ -1,5 +1,8 @@
-
+/*TODO
 sass reele utilite ? mieux en css pur avec le recul ? 
-gerer les animations (bien plus dur en css quant js ) ? dont givup the fight
-remplacer ma section fonctionement par une ol li ? 
- /*TODO faire disparaitre lanimation Loader-bounce-jp une fois terminer*/
+modifier l'annimation de checking pour que le check soit automatiser au hover  ) ? dont givup the fight
+finir les mediaQueries 
+voir avec Jaber si la decoupe du scss est correct(jeudi)
+mixin ou pas ? 
+
+  */

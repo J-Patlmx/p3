@@ -1,0 +1,29 @@
+.reserved-menu {
+  text-align: center;
+  background-color: $color-grisclairebackground;
+  padding: 16px;
+  padding-bottom: 64px;
+  #reserved-menu-tittle {
+    font-size: 32px;
+  }
+  #reserved-menu-subTitle {
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  & .degrade {
+    background-image: linear-gradient(
+      $color-rosesecondaire,
+      $color-violetprimaire
+    );
+    border-radius: 32px;
+    padding: 18px 32px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}

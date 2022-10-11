@@ -1,0 +1,37 @@
+.fonctionnement {
+  #titleofFonctionSection {
+    padding-left: 16px;
+    padding-top: 16px;
+  }
+  .step {
+    border: 1px solid $color-grisclairebackground;
+    background-color: whitesmoke;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
+    display: flex;
+    gap: 32px;
+    padding: 24px;
+    border-radius: 24px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+    &:hover {
+      background-color: rgba(146, 86, 220, 0.336);
+      color: $color-violetprimaire;
+      border: 1px solid transparent;
+    }
+  }
+  .purpule-circle {
+    border: 1px solid $color-violetprimaire;
+    border-radius: 100%;
+    width: 19px;
+    height: 19px;
+    background-color: $color-violetprimaire;
+    margin-left: -32px;
+  }
+
+  .stepNumber {
+    position: relative;
+    left: 5px;
+    color: white;
+  }
+}

@@ -4,357 +4,93 @@ $color-rosesecondaire: #ff79da;
 $color-verttertiaire: #99e2d0;
 $color-grisbackground: #d3d3d3;
 $color-grisclairebackground: #f3f3f3;
-@import "animation.scss";
-@import "btn.scss";
+@import "../sass/components/animation.scss";
+@import "../sass/components/btn.scss";
+@import "../sass/layout/header.scss";
+@import "../sass/layout/localisation.scss";
+@import "../sass/layout/reservation.scss";
+@import "../sass/layout/functioning.scss";
+@import "../sass/layout/restaurantmainpage.scss";
+@import "../sass/layout/whatdouwanttoeat.scss";
+@import "../sass/layout/footer.scss";
 
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
+  padding: 0;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: 10;
-  padding: 16px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
-  h1 {
-    flex: 2;
-    font-family: Shrikhand, "cursive";
-    margin: 0;
-    text-align: center;
-    font-size: 32px;
-  }
-  .fa-arrow-left {
-    flex: 1;
-    color: black;
-    font-weight: 900;
-    font-size: 24px;
-  }
-}
-
-#localisation {
-  height: 50px;
-  padding-top: 8px;
-
-  padding-bottom: 8px;
-  display: flex;
-  justify-content: center;
-  background-color: $color-grisbackground;
-  position: relative;
-  align-items: center;
-  gap: 16px;
-  font-family: "Shrikhand", cursive;
-  &i {
-    font-weight: 900;
-  }
-  #inputForm-localisation {
-    border: none;
-    background-color: $color-grisbackground;
-    &::placeholder {
-      font-weight: bolder;
-      font-size: 19px;
-      color: black;
-      opacity: 1;
-    }
-  }
-}
-
-.reserved-menu {
-  text-align: center;
-  background-color: $color-grisclairebackground;
-  padding: 16px;
-  padding-bottom: 64px;
-  #reserved-menu-tittle {
-    font-size: 32px;
-  }
-  #reserved-menu-subTitle {
-    margin-bottom: 32px;
-    font-size: 18px;
-    font-weight: 300;
-  }
-  & .degrade {
-    background-image: linear-gradient(
-      $color-rosesecondaire,
-      $color-violetprimaire
-    );
-    border-radius: 32px;
-    padding: 18px 32px;
-    color: white;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    &:hover {
-      transform: scale(1.02);
-    }
-  }
-}
-.fonctionnement {
+/*
+ TODO:  *media queries a finir pour le choix des restos
+        *une fois fini les mettre dans le bon dossier
+*/
+@media (min-width: 768px) {
   #titleofFonctionSection {
-    padding-left: 16px;
-    padding-top: 16px;
+    text-align: center;
   }
-  .step {
-    border: 1px solid $color-grisclairebackground;
-    background-color: whitesmoke;
-    margin-bottom: 16px;
-    margin-right: 16px;
-    margin-left: 16px;
+
+  #step {
     display: flex;
-    gap: 32px;
-    padding: 24px;
-    border-radius: 24px;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
-    &:hover {
-      background-color: rgba(146, 86, 220, 0.336);
-      color: $color-violetprimaire;
+    padding-left: 8px;
+    align-items: center;
+    justify-content: center;
+    .step {
+      flex: 1;
+      gap: 10px;
+      padding: 10px;
     }
   }
-  .purpule-circle {
-    border: 1px solid $color-violetprimaire;
-    border-radius: 100%;
-    width: 19px;
-    height: 19px;
-    background-color: $color-violetprimaire;
-    margin-left: -32px;
-  }
-
-  .stepNumber {
-    position: relative;
-
-    left: 5px;
-    color: white;
-  }
-}
-
-/* RESTAURANT*/
-#Restaurant {
-  background-color: $color-grisclairebackground;
-  padding-bottom: 32px;
-  & #titleofrestaurantsection {
-    padding-left: 16px;
-    padding-top: 16px;
-    margin-bottom: 0;
-  }
-
-  .link-restaurants {
-    text-decoration: none;
-    color: black;
+  #Restaurant {
     display: flex;
     flex-direction: column;
-  }
-  .restaurant-cards {
-    background-color: white;
-    display: block;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
-    margin-bottom: 32px;
-    border-radius: 16px;
-    height: 100%;
-    margin: 16px;
-    .imgRestaurants {
-      width: 100%;
-      height: 192px;
-      border-radius: 16px 16px 0 0;
-      object-fit: cover;
-      object-position: center;
+    margin-right: 16px;
+    margin-left: 16px;
+    #titleofrestaurantsection {
+      text-align: center;
     }
-    .infoCards {
-      display: flex;
-      flex: 3;
-      align-items: center;
-      padding-left: 16px;
-    }
-    .infoCards-WithoutHeart {
-      flex: 2;
-      line-height: 0;
-    }
-    .fa-regular {
-      position: absolute;
-      right: 10%;
-      color: black;
-      transition: 1s ease-out;
-      &:hover {
-        color: $color-rosesecondaire;
-        font-weight: bold;
-        cursor: pointer;
-      }
+    .status {
+      right: 48px;
     }
   }
-
-  .status {
-    position: absolute;
-    text-align: center;
-    color: #53b99f;
-    background-color: $color-verttertiaire;
-    margin-left: 230px;
-    margin-right: auto;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 6px;
-    &::before {
-      content: ("Nouveau");
-    }
-  }
-  .statusOff {
-    display: none;
-  }
-  .titleof-infoCards1::after {
-    font-weight: bold;
-  }
-  .titleof-infoCards2::after {
-    font-weight: bold;
-  }
-  .titleof-infoCards3::after {
-    font-weight: bold;
-  }
-  .titleof-infoCards4::after {
-    font-weight: bold;
-  }
-}
-
-/*RESTAURANT*/
-.enTeteresto {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-/* GENERAL STYLE OF RESTAURANT SECTION*/
-#What-do-u-want-to-eat {
-  background-color: $color-grisbackground;
-  position: relative;
-  width: 100%;
-  border-radius: 32px 32px 0 0;
-  #title-of-Resto {
-    font-family: "Shrikhand", cursive;
-    font-size: 20px;
-    font-style: italic;
-    display: flex;
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 16px;
-    margin-bottom: 0;
-    margin-top: -32px;
-    .fa-regular {
-      position: absolute;
-      right: 10%;
-      color: black;
-      transition: 1s ease-out;
-      &:hover {
-        color: $color-rosesecondaire;
-        font-weight: bold;
-        cursor: pointer;
-      }
-    }
-  }
-  & .choice {
-    background-color: white;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
-    margin: 10px;
-    border-radius: 16px;
-  }
-  & .title-Choice {
-    font-size: 16px;
-    font-weight: bolder;
-    line-height: 0px;
-  }
-  & .degrade {
-    background-image: linear-gradient(
-      $color-rosesecondaire,
-      $color-violetprimaire
-    );
-    border-radius: 32px;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    position: relative;
-    left: 30%;
-    cursor: pointer;
-    &:hover {
-      transform: scale(1.02);
-    }
-  }
-  .green-Line-deco {
-    padding-bottom: 8px;
-    padding-left: 8px;
-    & h4 {
-      margin: 0;
+    #titleOf-Footer {
       font-size: 18px;
-      font-weight: 400;
     }
-    &::after {
-      content: "";
-      width: 50px;
-      height: 8px;
-      background-color: $color-verttertiaire;
-      position: absolute;
-      margin: 0;
+
+    #propose {
+      margin-bottom: 0;
+    }
+
+    #partnership {
+      margin-bottom: 0;
+    }
+
+    #legal {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    #contactFooter {
+      margin-bottom: 0;
     }
   }
 }
-
-.point-of-omission {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  overflow: hidden;
-  word-wrap: break-Word;
-  font-size: 14px;
-}
-footer {
-  background-color: rgb(94, 93, 93);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding-left: 16px;
-  font-size: 12px;
-  position: relative;
-  bottom: 0;
-
-  #titleOf-Footer {
-    font-family: Shrikhand, "cursive";
-    font-size: 16px;
+@media (min-width: 1024px) {
+  #restaurant {
+    .status {
+      right: 64px;
+    }
   }
-  #propose {
+  #step {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: -16px;
-    &:hover {
-      color: $color-rosesecondaire;
-    }
-  }
-  #partnership {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: -16px;
-    &:hover {
-      color: $color-rosesecondaire;
-    }
-  }
-  #legal {
-    margin-bottom: 4px;
-    &:hover {
-      color: $color-rosesecondaire;
-    }
-  }
-
-  #contactFooter {
-    margin-bottom: 32px;
-    text-decoration: none;
-    color: white;
-    &:hover {
-      color: $color-rosesecondaire;
+    justify-content: center;
+    .step {
+      flex: 1;
+      padding: 10px;
     }
   }
 }
