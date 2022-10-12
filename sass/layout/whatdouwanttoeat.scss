@@ -4,6 +4,7 @@
   position: relative;
   width: 100%;
   border-radius: 32px 32px 0 0;
+  padding-bottom: 64px;
   #title-of-Resto {
     font-family: "Shrikhand", cursive;
     font-size: 20px;
@@ -43,12 +44,13 @@
   }
   & .degrade {
     @include btn;
-    padding: 8px 16px;
+    padding: 8px 32px;
     position: relative;
-    left: calc(100% / 3);
+    left: calc(100% / 4);
     /* Center le btn*/
     // align-items: center;
     // justify-content: center;
+    margin-top: 32px;
   }
   .green-Line-deco {
     padding-bottom: 8px;

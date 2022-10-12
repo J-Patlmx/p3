@@ -365,6 +365,7 @@ header .fa-arrow-left {
   position: relative;
   width: 100%;
   border-radius: 32px 32px 0 0;
+  padding-bottom: 64px;
 }
 #What-do-u-want-to-eat #title-of-Resto {
   font-family: "Shrikhand", cursive;
@@ -413,10 +414,11 @@ header .fa-arrow-left {
   box-shadow: 4px 6px 8px gray;
   filter: contrast(110%);
   cursor: pointer;
-  padding: 8px 16px;
+  padding: 8px 32px;
   position: relative;
-  left: 33.3333333333%;
+  left: 25%;
   /* Center le btn*/
+  margin-top: 32px;
 }
 #What-do-u-want-to-eat .degrade:hover {
   transform: scale(1.02);
@@ -529,15 +531,45 @@ body {
     position: absolute;
     right: 48px;
   }
+  #What-do-u-want-to-eat {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -32px;
+    padding-bottom: 0;
+  }
+  #What-do-u-want-to-eat #title-of-Resto {
+    width: 100%;
+    padding: 16px;
+    margin-top: 8px;
+    font-size: 32px;
+  }
+  #What-do-u-want-to-eat .Main-Course--spe {
+    margin-top: -100px;
+  }
+  #What-do-u-want-to-eat .Dessert--spe {
+    margin-top: -100px;
+  }
+  #What-do-u-want-to-eat .choice {
+    width: 330px;
+  }
+  #What-do-u-want-to-eat .choice:hover {
+    transform: scale(1);
+  }
   #What-do-u-want-to-eat .degrade {
     width: 100%;
     border-radius: 0;
     left: 0;
+    margin-bottom: 16px;
+    margin-top: 0;
   }
   footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    font-size: 16px;
   }
   footer #titleOf-Footer {
     font-size: 18px;
@@ -569,32 +601,6 @@ body {
   .status {
     position: absolute;
     right: 60px;
-  }
-  #What-do-u-want-to-eat {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: -32px;
-  }
-  #What-do-u-want-to-eat #title-of-Resto {
-    width: 100%;
-    padding: 16px;
-    margin-top: 8px;
-    font-size: 32px;
-  }
-  #What-do-u-want-to-eat .Main-Course--spe {
-    margin-top: -100px;
-  }
-  #What-do-u-want-to-eat .Dessert--spe {
-    margin-top: -100px;
-  }
-  #What-do-u-want-to-eat .choice {
-    width: 330px;
-  }
-  #What-do-u-want-to-eat .choice:hover {
-    transform: scale(1);
   }
 }
 
