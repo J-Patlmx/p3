@@ -27,7 +27,7 @@
       }
     }
   }
-  & .choice {
+  .choice {
     background-color: white;
     display: flex;
     align-items: flex-end;
@@ -37,25 +37,22 @@
     border-radius: 16px;
     cursor: pointer;
   }
-  & .title-Choice {
+  .title-Choice {
     font-size: 16px;
     font-weight: bolder;
     line-height: 0px;
   }
-  & .degrade {
+  .degrade {
     @include btn;
     padding: 8px 32px;
     position: relative;
     left: calc(100% / 4);
-    /* Center le btn*/
-    // align-items: center;
-    // justify-content: center;
     margin-top: 32px;
   }
   .green-Line-deco {
     padding-bottom: 8px;
     padding-left: 8px;
-    & h4 {
+    h4 {
       margin: 0;
       font-size: 18px;
       font-weight: 400;

@@ -20,14 +20,10 @@ body {
   padding: 0;
 }
 
-/*
- TODO:  *media queries a finir pour le choix des restos
-        *une fois fini les mettre dans le bon dossier
-*/
+/*TODO finir les mediaQueries 
+  les mettre dans le bon dossier
+  */
 @media (min-width: 768px) {
-  #titleofFonctionSection {
-    text-align: center;
-  }
   #step {
     display: flex;
     padding-left: 8px;
@@ -40,18 +36,50 @@ body {
     }
   }
 
-  #titleofrestaurantsection {
-    text-align: center;
+  /* RESTAURANT*/
+  #Restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    #titleofrestaurantsection {
+      width: 100%;
+    }
+    .restaurant-cards {
+      flex: 1;
+
+      .infoCards {
+        padding-left: 1%;
+      }
+      .infoCards-WithoutHeart {
+        h3 {
+          font-size: 16px;
+        }
+      }
+      .fa-regular {
+        right: 3%;
+      }
+      .status {
+        display: flex;
+        float: inline-end;
+        top: 40px;
+        position: relative;
+        margin: -20px;
+        /*TODO fix le positionement*/
+      }
+      .statusOff {
+        display: none;
+      }
+    }
   }
-  .status {
-    position: absolute;
-    right: 48px;
-  }
+
+  /*-----------------------*/
+
   #What-do-u-want-to-eat {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin-top: -32px;
     padding-bottom: 0;
@@ -62,13 +90,16 @@ body {
       margin-top: 8px;
       font-size: 32px;
     }
+
+    /*TODO fix l'apparence de la page:
+     la note enchantee
+     entre 768px =>1049px*/
     .Main-Course--spe {
-      margin-top: -100px;
+      margin-top: 0;
     }
     .Dessert--spe {
-      margin-top: -100px;
+      margin: 0;
     }
-
     .choice {
       width: 330px;
       &:hover {
@@ -90,7 +121,7 @@ body {
     align-items: center;
     font-size: 16px;
     #titleOf-Footer {
-      font-size: 18px;
+      font-size: 28px;
     }
     #propose {
       margin-bottom: 0;
@@ -109,16 +140,18 @@ body {
 }
 @media (min-width: 1024px) {
   #step {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     .step {
-      flex: 1;
       padding: 24px;
     }
   }
   .status {
-    position: absolute;
     right: 60px;
+  }
+
+  .Main-Course--spe {
+    margin-top: -100px;
+  }
+  .Dessert--spe {
+    margin-top: -100px;
   }
 }

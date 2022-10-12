@@ -288,8 +288,6 @@ header .fa-arrow-left {
 #Restaurant .link-restaurants {
   text-decoration: none;
   color: black;
-  display: flex;
-  flex-direction: column;
 }
 #Restaurant .restaurant-cards {
   background-color: white;
@@ -318,7 +316,7 @@ header .fa-arrow-left {
   line-height: 0;
 }
 #Restaurant .restaurant-cards .fa-regular {
-  position: absolute;
+  position: relative;
   right: 10%;
   color: black;
   transition: 1s ease-out;
@@ -510,9 +508,6 @@ body {
         *une fois fini les mettre dans le bon dossier
 */
 @media (min-width: 768px) {
-  #titleofFonctionSection {
-    text-align: center;
-  }
   #step {
     display: flex;
     padding-left: 8px;
@@ -524,13 +519,40 @@ body {
     gap: 10px;
     padding: 10px;
   }
-  #titleofrestaurantsection {
-    text-align: center;
+  /*-----------------------*/
+  /* RESTAURANT*/
+  #Restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  .status {
-    position: absolute;
-    right: 48px;
+  #Restaurant #titleofrestaurantsection {
+    width: 100%;
   }
+  #Restaurant .restaurant-cards {
+    flex: 1;
+  }
+  #Restaurant .restaurant-cards .infoCards {
+    padding-left: 1%;
+  }
+  #Restaurant .restaurant-cards .infoCards-WithoutHeart h3 {
+    font-size: 16px;
+  }
+  #Restaurant .restaurant-cards .fa-regular {
+    right: 3%;
+  }
+  #Restaurant .restaurant-cards .status {
+    display: flex;
+    float: inline-end;
+    top: 40px;
+    position: relative;
+    margin: -20px;
+    /*TODO fix le positionement*/
+  }
+  #Restaurant .restaurant-cards .statusOff {
+    display: none;
+  }
+  /*-----------------------*/
   #What-do-u-want-to-eat {
     display: flex;
     flex-direction: row;
@@ -572,7 +594,7 @@ body {
     font-size: 16px;
   }
   footer #titleOf-Footer {
-    font-size: 18px;
+    font-size: 28px;
   }
   footer #propose {
     margin-bottom: 0;
@@ -589,17 +611,10 @@ body {
   }
 }
 @media (min-width: 1024px) {
-  #step {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   #step .step {
-    flex: 1;
     padding: 24px;
   }
   .status {
-    position: absolute;
     right: 60px;
   }
 }
