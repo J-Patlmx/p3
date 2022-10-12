@@ -17,7 +17,7 @@
   .restaurant-cards {
     background-color: white;
     display: block;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+    @include boxShadowA;
     margin-bottom: 32px;
     border-radius: 16px;
     height: 100%;

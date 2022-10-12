@@ -31,7 +31,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+    @include boxShadowA;
     margin: 10px;
     border-radius: 16px;
     cursor: pointer;
@@ -44,7 +44,8 @@
   & .degrade {
     @include btn;
     padding: 8px 16px;
-    display: flex;
+    position: relative;
+    left: calc(100% / 3);
     /* Center le btn*/
     // align-items: center;
     // justify-content: center;

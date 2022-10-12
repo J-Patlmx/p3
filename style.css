@@ -249,9 +249,7 @@ header .fa-arrow-left {
 .fonctionnement .step {
   border: 1px solid #f3f3f3;
   background-color: whitesmoke;
-  margin-bottom: 16px;
-  margin-right: 16px;
-  margin-left: 16px;
+  margin: 0 16px 16px 16px;
   display: flex;
   gap: 32px;
   padding: 24px;
@@ -416,7 +414,8 @@ header .fa-arrow-left {
   filter: contrast(110%);
   cursor: pointer;
   padding: 8px 16px;
-  display: flex;
+  position: relative;
+  left: 33.3333333333%;
   /* Center le btn*/
 }
 #What-do-u-want-to-eat .degrade:hover {
@@ -523,14 +522,17 @@ body {
     gap: 10px;
     padding: 10px;
   }
-  #Restaurant {
-    display: flex;
-    flex-direction: column;
-    margin-right: 16px;
-    margin-left: 16px;
-  }
-  #Restaurant #titleofrestaurantsection {
+  #titleofrestaurantsection {
     text-align: center;
+  }
+  .status {
+    position: absolute;
+    right: 48px;
+  }
+  #What-do-u-want-to-eat .degrade {
+    width: 100%;
+    border-radius: 0;
+    left: 0;
   }
   footer {
     flex-direction: row;
@@ -563,6 +565,36 @@ body {
   #step .step {
     flex: 1;
     padding: 24px;
+  }
+  .status {
+    position: absolute;
+    right: 60px;
+  }
+  #What-do-u-want-to-eat {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -32px;
+  }
+  #What-do-u-want-to-eat #title-of-Resto {
+    width: 100%;
+    padding: 16px;
+    margin-top: 8px;
+    font-size: 32px;
+  }
+  #What-do-u-want-to-eat .Main-Course--spe {
+    margin-top: -100px;
+  }
+  #What-do-u-want-to-eat .Dessert--spe {
+    margin-top: -100px;
+  }
+  #What-do-u-want-to-eat .choice {
+    width: 330px;
+  }
+  #What-do-u-want-to-eat .choice:hover {
+    transform: scale(1);
   }
 }
 

@@ -4,7 +4,7 @@ header {
   position: relative;
   z-index: 10;
   padding: 16px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+  @include boxShadowA;
   h1 {
     flex: 2;
     font-family: Shrikhand, "cursive";
