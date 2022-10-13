@@ -91,6 +91,11 @@
 /*
 /*FIN ANIMATION CHARGEMENT MENU*/
 /*ANIMATION CHECK MENU*/
+/*TODO fix modifier l'annimation de 
+  checking pour que le check 
+  soit automatiser au hover
+   dont givup the fight
+  */
 .choice-check {
   background-color: #99e2d0;
   display: flex;
@@ -107,6 +112,12 @@
 
 .choice:hover .choice-check {
   width: 60px;
+}
+
+.choice:hover .fa-circle-check {
+  transform: rotate(-360deg);
+  transition-duration: 0.4s;
+  animation-delay: 1s;
 }
 
 .choice-check::after.price {
@@ -142,19 +153,32 @@
   background-color: whitesmoke;
   color: #99e2d0;
   border-radius: 50%;
-  display: flex;
   font-size: 32px;
+  display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   transform: rotate(1turn);
 }
-.fa-circle-check:hover {
-  transform: rotate(0);
-  transition-duration: 0.4s;
-}
 
+/*
+.fa-circle-check {
+  animation: rotatecheck 0.4s ease-in-out both;
+  @keyframes rotatecheck {
+    0% {
+      transform: rotate(0);
+    }
+    0% {
+      transform: rotate(360deg);
+    }
+  }
+}*/
 /*FIN ANIMATION CHECK MENU*/
+@media (prefers-reduced-motion: reduce) {
+  .animation {
+    animation: none;
+  }
+}
 header {
   display: flex;
   align-items: center;
@@ -170,6 +194,13 @@ header h1 {
   text-align: center;
   font-size: 32px;
 }
+header .spanh1 {
+  flex: 2;
+  font-family: Shrikhand, "cursive";
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+}
 header .fa-arrow-left {
   flex: 1;
   color: black;
@@ -178,7 +209,7 @@ header .fa-arrow-left {
 }
 
 /* CE JOINS AU HEADER DANS WDUWTE RESTAURANT*/
-.enTeteresto {
+.hero {
   height: 200px;
   width: 100%;
   object-fit: cover;
@@ -255,11 +286,12 @@ header .fa-arrow-left {
   padding: 24px;
   border-radius: 24px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+  /* TODO fix le changement de couleur du text au hover*/
 }
 .fonctionnement .step:hover {
   background-color: rgba(146, 86, 220, 0.336);
-  color: #9356dc;
   border: 1px solid transparent;
+  color: #9356dc;
 }
 .fonctionnement .purpule-circle {
   border: 1px solid #9356dc;
@@ -400,7 +432,6 @@ header .fa-arrow-left {
 #What-do-u-want-to-eat .title-Choice {
   font-size: 16px;
   font-weight: bolder;
-  line-height: 0px;
 }
 #What-do-u-want-to-eat .degrade {
   background-image: linear-gradient(#ff79da, #9356dc);
@@ -415,7 +446,6 @@ header .fa-arrow-left {
   padding: 8px 32px;
   position: relative;
   left: 25%;
-  /* Center le btn*/
   margin-top: 32px;
 }
 #What-do-u-want-to-eat .degrade:hover {
@@ -427,7 +457,7 @@ header .fa-arrow-left {
   padding-bottom: 8px;
   padding-left: 8px;
 }
-#What-do-u-want-to-eat .green-Line-deco h4 {
+#What-do-u-want-to-eat .green-Line-deco h2 {
   margin: 0;
   font-size: 18px;
   font-weight: 400;
@@ -442,6 +472,9 @@ header .fa-arrow-left {
 }
 
 .point-of-omission {
+  /* text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;*/
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
@@ -503,10 +536,9 @@ body {
   padding: 0;
 }
 
-/*
- TODO:  *media queries a finir pour le choix des restos
-        *une fois fini les mettre dans le bon dossier
-*/
+/*TODO finir les mediaQueries 
+  les mettre dans le bon dossier
+  */
 @media (min-width: 768px) {
   #step {
     display: flex;
@@ -519,7 +551,6 @@ body {
     gap: 10px;
     padding: 10px;
   }
-  /*-----------------------*/
   /* RESTAURANT*/
   #Restaurant {
     display: flex;
@@ -557,10 +588,13 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin-top: -32px;
     padding-bottom: 0;
+    /*TODO fix l'apparence de la page:
+     la note enchantee
+     entre 1024px =>1049px*/
   }
   #What-do-u-want-to-eat #title-of-Resto {
     width: 100%;
@@ -568,11 +602,15 @@ body {
     margin-top: 8px;
     font-size: 32px;
   }
+  #What-do-u-want-to-eat .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
   #What-do-u-want-to-eat .Main-Course--spe {
-    margin-top: -100px;
+    margin-top: 0;
   }
   #What-do-u-want-to-eat .Dessert--spe {
-    margin-top: -100px;
+    margin: 0;
   }
   #What-do-u-want-to-eat .choice {
     width: 330px;

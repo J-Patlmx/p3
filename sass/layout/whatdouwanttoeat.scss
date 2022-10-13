@@ -40,7 +40,6 @@
   .title-Choice {
     font-size: 16px;
     font-weight: bolder;
-    line-height: 0px;
   }
   .degrade {
     @include btn;
@@ -52,7 +51,7 @@
   .green-Line-deco {
     padding-bottom: 8px;
     padding-left: 8px;
-    h4 {
+    h2 {
       margin: 0;
       font-size: 18px;
       font-weight: 400;
@@ -69,6 +68,9 @@
 }
 
 .point-of-omission {
+  /* text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;*/
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;

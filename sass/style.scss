@@ -90,10 +90,13 @@ body {
       margin-top: 8px;
       font-size: 32px;
     }
-
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+    }
     /*TODO fix l'apparence de la page:
      la note enchantee
-     entre 768px =>1049px*/
+     entre 1024px =>1049px*/
     .Main-Course--spe {
       margin-top: 0;
     }
@@ -146,12 +149,5 @@ body {
   }
   .status {
     right: 60px;
-  }
-
-  .Main-Course--spe {
-    margin-top: -100px;
-  }
-  .Dessert--spe {
-    margin-top: -100px;
   }
 }

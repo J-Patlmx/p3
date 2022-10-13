@@ -12,6 +12,13 @@ header {
     text-align: center;
     font-size: 32px;
   }
+  .spanh1 {
+    flex: 2;
+    font-family: Shrikhand, "cursive";
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+  }
   .fa-arrow-left {
     flex: 1;
     color: black;
@@ -20,7 +27,7 @@ header {
   }
 }
 /* CE JOINS AU HEADER DANS WDUWTE RESTAURANT*/
-.enTeteresto {
+.hero {
   height: 200px;
   width: 100%;
   object-fit: cover;
