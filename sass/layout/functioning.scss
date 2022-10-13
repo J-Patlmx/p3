@@ -15,7 +15,9 @@
     &:hover {
       background-color: rgba(146, 86, 220, 0.336);
       border: 1px solid transparent;
-      color: $color-violetprimaire;
+      i {
+        color: $color-violetprimaire;
+      }
     }
     /* TODO fix le changement de couleur du text au hover*/
   }

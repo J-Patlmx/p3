@@ -291,6 +291,8 @@ header .fa-arrow-left {
 .fonctionnement .step:hover {
   background-color: rgba(146, 86, 220, 0.336);
   border: 1px solid transparent;
+}
+.fonctionnement .step:hover i {
   color: #9356dc;
 }
 .fonctionnement .purpule-circle {
