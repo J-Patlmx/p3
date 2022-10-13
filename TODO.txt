@@ -1,6 +1,6 @@
 
 
- /* TODO fix le changement de couleur du text au hover    */
+
 
 
   /*TODO finir les mediaQueries 
