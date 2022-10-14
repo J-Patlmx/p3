@@ -473,14 +473,15 @@ header .fa-arrow-left {
 }
 
 .point-of-omission {
-  /* text-overflow: ellipsis;
+  /*  text-overflow: ellipsis;
+  display: inline-block;
   white-space: nowrap;
   overflow: hidden;*/
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-  overflow: hidden;
   word-wrap: break-Word;
+  overflow: hidden;
   font-size: 14px;
 }
 
