@@ -263,14 +263,14 @@ header .fa-arrow-left {
   color: white;
   font-size: 18px;
   border: none;
-  box-shadow: 4px 6px 8px gray;
+  box-shadow: 4px 6px 8px rgb(158, 155, 155);
   filter: contrast(110%);
   cursor: pointer;
 }
 .reserved-menu .degrade:hover {
   transform: scale(1.02);
   filter: contrast(150%);
-  box-shadow: 4px 6px 8px rgb(158, 155, 155);
+  box-shadow: 4px 6px 8px gray;
 }
 
 .fonctionnement #titleofFonctionSection {
@@ -441,7 +441,7 @@ header .fa-arrow-left {
   color: white;
   font-size: 18px;
   border: none;
-  box-shadow: 4px 6px 8px gray;
+  box-shadow: 4px 6px 8px rgb(158, 155, 155);
   filter: contrast(110%);
   cursor: pointer;
   padding: 8px 32px;
@@ -452,7 +452,7 @@ header .fa-arrow-left {
 #What-do-u-want-to-eat .degrade:hover {
   transform: scale(1.02);
   filter: contrast(150%);
-  box-shadow: 4px 6px 8px rgb(158, 155, 155);
+  box-shadow: 4px 6px 8px gray;
 }
 #What-do-u-want-to-eat .green-Line-deco {
   padding-bottom: 8px;
@@ -473,10 +473,6 @@ header .fa-arrow-left {
 }
 
 .point-of-omission {
-  /*  text-overflow: ellipsis;
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;*/
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
@@ -485,6 +481,10 @@ header .fa-arrow-left {
   font-size: 14px;
 }
 
+/*  text-overflow: ellipsis;
+display: inline-block;
+white-space: nowrap;
+overflow: hidden;*/
 footer {
   background-color: rgb(94, 93, 93);
   color: white;
