@@ -335,13 +335,11 @@ header .fa-arrow-left {
 #Restaurant .restaurant-cards .fa-regular {
   position: relative;
   right: 10%;
-  color: black;
   transition: 1s ease-out;
 }
 #Restaurant .restaurant-cards .fa-regular:hover {
-  color: #ff79da;
-  font-weight: bold;
-  cursor: pointer;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  transform: scaleY(1);
 }
 #Restaurant .restaurant-cards .status {
   position: absolute;
@@ -417,7 +415,6 @@ header .fa-arrow-left {
 #What-do-u-want-to-eat .title-Choice {
   font-size: 16px;
   font-weight: bolder;
-  padding-left: 8px;
 }
 #What-do-u-want-to-eat .degrade {
   background-image: linear-gradient(#ff79da, #9356dc);
