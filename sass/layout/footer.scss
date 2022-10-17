@@ -9,7 +9,7 @@ footer {
   bottom: 0;
 
   #titleOf-Footer {
-    font-family: Shrikhand, "cursive";
+    @include Shrikhand;
     font-size: 16px;
   }
 

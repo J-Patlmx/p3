@@ -18,12 +18,20 @@ body {
   font-family: Roboto, sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /*TODO finir les mediaQueries 
   les mettre dans le bon dossier
   */
 @media (min-width: 768px) {
+  #reserved-menu-tittle {
+    font-size: 40px;
+  }
+  #reserved-menu-subTitle {
+    font-size: 24px;
+  }
+
   #step {
     display: flex;
     padding-left: 8px;
@@ -65,7 +73,6 @@ body {
         top: 40px;
         position: relative;
         margin: -20px;
-        /*TODO fix le positionement*/
       }
       .statusOff {
         display: none;
@@ -94,9 +101,7 @@ body {
       display: flex;
       flex-wrap: wrap;
     }
-    /*TODO fix l'apparence de la page:
-     la note enchantee
-     entre 1024px =>1049px*/
+
     .Main-Course--spe {
       margin-top: 0;
     }
@@ -142,6 +147,16 @@ body {
   }
 }
 @media (min-width: 1024px) {
+  #reserved-menu-tittle {
+    font-size: 44px;
+  }
+  #reserved-menu-subTitle {
+    font-size: 32px;
+    br {
+      display: none;
+    }
+  }
+
   #step {
     .step {
       padding: 24px;

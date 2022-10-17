@@ -91,11 +91,6 @@
 /*
 /*FIN ANIMATION CHARGEMENT MENU*/
 /*ANIMATION CHECK MENU*/
-/*TODO fix modifier l'annimation de 
-  checking pour que le check 
-  soit automatiser au hover
-   dont givup the fight
-  */
 .choice-check {
   background-color: #99e2d0;
   display: flex;
@@ -161,18 +156,6 @@
   transform: rotate(1turn);
 }
 
-/*
-.fa-circle-check {
-  animation: rotatecheck 0.4s ease-in-out both;
-  @keyframes rotatecheck {
-    0% {
-      transform: rotate(0);
-    }
-    0% {
-      transform: rotate(360deg);
-    }
-  }
-}*/
 /*FIN ANIMATION CHECK MENU*/
 @media (prefers-reduced-motion: reduce) {
   .animation {
@@ -189,14 +172,14 @@ header {
 }
 header h1 {
   flex: 2;
-  font-family: Shrikhand, "cursive";
+  font-family: "Shrikhand", cursive;
   margin: 0;
   text-align: center;
   font-size: 32px;
 }
 header .spanh1 {
   flex: 2;
-  font-family: Shrikhand, "cursive";
+  font-family: "Shrikhand", cursive;
   margin: 0;
   text-align: center;
   font-size: 32px;
@@ -218,15 +201,16 @@ header .fa-arrow-left {
 
 #localisation {
   height: 50px;
+  font-family: "Shrikhand", cursive;
   padding-top: 8px;
   padding-bottom: 8px;
+  padding-left: 32px;
   display: flex;
   justify-content: center;
   background-color: #d3d3d3;
   position: relative;
   align-items: center;
   gap: 16px;
-  font-family: "Shrikhand", cursive;
 }
 #localisationi {
   font-weight: 900;
@@ -433,6 +417,7 @@ header .fa-arrow-left {
 #What-do-u-want-to-eat .title-Choice {
   font-size: 16px;
   font-weight: bolder;
+  padding-left: 8px;
 }
 #What-do-u-want-to-eat .degrade {
   background-image: linear-gradient(#ff79da, #9356dc);
@@ -496,7 +481,7 @@ footer {
   bottom: 0;
 }
 footer #titleOf-Footer {
-  font-family: Shrikhand, "cursive";
+  font-family: "Shrikhand", cursive;
   font-size: 16px;
 }
 footer #propose {
@@ -536,12 +521,19 @@ body {
   font-family: Roboto, sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /*TODO finir les mediaQueries 
   les mettre dans le bon dossier
   */
 @media (min-width: 768px) {
+  #reserved-menu-tittle {
+    font-size: 40px;
+  }
+  #reserved-menu-subTitle {
+    font-size: 24px;
+  }
   #step {
     display: flex;
     padding-left: 8px;
@@ -580,7 +572,6 @@ body {
     top: 40px;
     position: relative;
     margin: -20px;
-    /*TODO fix le positionement*/
   }
   #Restaurant .restaurant-cards .statusOff {
     display: none;
@@ -594,9 +585,6 @@ body {
     align-items: center;
     margin-top: -32px;
     padding-bottom: 0;
-    /*TODO fix l'apparence de la page:
-     la note enchantee
-     entre 1024px =>1049px*/
   }
   #What-do-u-want-to-eat #title-of-Resto {
     width: 100%;
@@ -651,6 +639,15 @@ body {
   }
 }
 @media (min-width: 1024px) {
+  #reserved-menu-tittle {
+    font-size: 44px;
+  }
+  #reserved-menu-subTitle {
+    font-size: 32px;
+  }
+  #reserved-menu-subTitle br {
+    display: none;
+  }
   #step .step {
     padding: 24px;
   }

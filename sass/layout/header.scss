@@ -7,14 +7,14 @@ header {
   @include boxShadowA;
   h1 {
     flex: 2;
-    font-family: Shrikhand, "cursive";
+    @include Shrikhand;
     margin: 0;
     text-align: center;
     font-size: 32px;
   }
   .spanh1 {
     flex: 2;
-    font-family: Shrikhand, "cursive";
+    @include Shrikhand;
     margin: 0;
     text-align: center;
     font-size: 32px;

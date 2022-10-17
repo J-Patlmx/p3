@@ -95,12 +95,6 @@
 
 /*ANIMATION CHECK MENU*/
 
-/*TODO fix modifier l'annimation de 
-  checking pour que le check 
-  soit automatiser au hover
-   dont givup the fight
-  */
-
 .choice-check {
   background-color: $color-verttertiaire;
   display: flex;
@@ -155,21 +149,8 @@
   align-items: center;
   justify-content: center;
   transform: rotate(1turn);
-
-  // fa-spin limitation de duree ou de rotate ?
 }
-/*
-.fa-circle-check {
-  animation: rotatecheck 0.4s ease-in-out both;
-  @keyframes rotatecheck {
-    0% {
-      transform: rotate(0);
-    }
-    0% {
-      transform: rotate(360deg);
-    }
-  }
-}*/
+
 /*FIN ANIMATION CHECK MENU*/
 
 @media (prefers-reduced-motion: reduce) {
