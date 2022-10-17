@@ -34,7 +34,6 @@
   .fa-regular {
     position: relative;
     right: 10%;
-    transition: 1s ease-out;
   }
   .fa-regular:hover {
     @include bg--gradient;
