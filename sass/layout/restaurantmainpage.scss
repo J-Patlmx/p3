@@ -69,16 +69,14 @@
   .statusOff {
     display: none;
   }
-  .titleof-infoCards1::after {
-    font-weight: bold;
+
+  .titleof-infoCards {
+    padding-bottom: 8px;
+    &::after {
+      font-weight: bold;
+    }
   }
-  .titleof-infoCards2::after {
-    font-weight: bold;
-  }
-  .titleof-infoCards3::after {
-    font-weight: bold;
-  }
-  .titleof-infoCards4::after {
-    font-weight: bold;
+  .cityof-infocards {
+    padding-bottom: 10px;
   }
 }
