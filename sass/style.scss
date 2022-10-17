@@ -69,10 +69,7 @@ body {
       }
       .status {
         display: flex;
-        float: inline-end;
-        top: 40px;
-        position: relative;
-        margin: -20px;
+        position: absolute;
       }
       .statusOff {
         display: none;
@@ -162,7 +159,7 @@ body {
       padding: 24px;
     }
   }
-  .status {
-    right: 60px;
-  }
+  // .status {
+  //   right: 60px;
+  // }
 }
