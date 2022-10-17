@@ -34,9 +34,18 @@
   .fa-regular {
     position: relative;
     right: 10%;
+    cursor: pointer;
   }
   .fa-regular:hover {
-    @include bg--gradient;
-    transform: scaleY(1);
+    // @include bg--gradient;
+    background: -webkit-linear-gradient(
+      $color-rosesecondaire,
+      $color-violetprimaire
+    );
+    display: block;
+    font-weight: bold;
+    /* TODO reglee la compatibiliter de clip */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

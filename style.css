@@ -335,10 +335,15 @@ header .fa-arrow-left {
 #Restaurant .restaurant-cards .fa-regular {
   position: relative;
   right: 10%;
+  cursor: pointer;
 }
 #Restaurant .restaurant-cards .fa-regular:hover {
-  background-image: linear-gradient(#ff79da, #9356dc);
-  transform: scaleY(1);
+  background: -webkit-linear-gradient(#ff79da, #9356dc);
+  display: block;
+  font-weight: bold;
+  /* TODO reglee la compatibiliter de clip */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #Restaurant .restaurant-cards .status {
   position: absolute;
@@ -389,15 +394,17 @@ header .fa-arrow-left {
   margin-top: -32px;
 }
 #What-do-u-want-to-eat #title-of-Resto .fa-regular {
-  position: absolute;
-  right: 5%;
-  color: black;
-  transition: 1s ease-out;
+  position: relative;
+  right: 10%;
+  cursor: pointer;
 }
 #What-do-u-want-to-eat #title-of-Resto .fa-regular:hover {
-  color: #ff79da;
+  background: -webkit-linear-gradient(#ff79da, #9356dc);
+  display: block;
   font-weight: bold;
-  cursor: pointer;
+  /* TODO reglee la compatibiliter de clip */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #What-do-u-want-to-eat .choice {
   background-color: white;
@@ -559,13 +566,6 @@ body {
   }
   #Restaurant .restaurant-cards .fa-regular {
     right: 3%;
-  }
-  #Restaurant .restaurant-cards .status {
-    display: flex;
-    position: absolute;
-  }
-  #Restaurant .restaurant-cards .statusOff {
-    display: none;
   }
   /*-----------------------*/
   #What-do-u-want-to-eat {
