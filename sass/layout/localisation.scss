@@ -6,9 +6,10 @@
   display: flex;
   justify-content: center;
   background-color: $color-grisbackground;
-  position: relative;
+  // position: relative;
   align-items: center;
   gap: 16px;
+  padding-left: 32px;
   &i {
     font-weight: 900;
   }
@@ -17,7 +18,7 @@
     background-color: $color-grisbackground;
     &::placeholder {
       font-weight: bolder;
-      font-size: 19px;
+      font-size: 16px;
       color: black;
       opacity: 1;
     }

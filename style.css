@@ -207,9 +207,9 @@ header .fa-arrow-left {
   display: flex;
   justify-content: center;
   background-color: #d3d3d3;
-  position: relative;
   align-items: center;
   gap: 16px;
+  padding-left: 32px;
 }
 #localisationi {
   font-weight: 900;
@@ -220,7 +220,7 @@ header .fa-arrow-left {
 }
 #localisation #inputForm-localisation::placeholder {
   font-weight: bolder;
-  font-size: 19px;
+  font-size: 16px;
   color: black;
   opacity: 1;
 }
@@ -349,26 +349,18 @@ header .fa-arrow-left {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#Restaurant .restaurant-cards .fa-regular:active {
-  background: -webkit-linear-gradient(#ff79da, #9356dc);
-  display: block;
-  font-weight: bold;
-  /* TODO reglee la compatibiliter de clip */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 #Restaurant .restaurant-cards .status {
   position: absolute;
   text-align: center;
-  color: #53b99f;
+  color: #34a98c;
   background-color: #99e2d0;
   top: 2px;
-  right: 5px;
+  right: 10px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 10px;
   padding-right: 10px;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 #Restaurant .restaurant-cards .status::after {
   content: "";
@@ -377,6 +369,7 @@ header .fa-arrow-left {
   display: none;
 }
 #Restaurant .titleof-infoCards {
+  padding-top: 6px;
   padding-bottom: 8px;
 }
 #Restaurant .titleof-infoCards::after {
@@ -411,14 +404,6 @@ header .fa-arrow-left {
   cursor: pointer;
 }
 #What-do-u-want-to-eat #title-of-Resto .fa-regular:hover {
-  background: -webkit-linear-gradient(#ff79da, #9356dc);
-  display: block;
-  font-weight: bold;
-  /* TODO reglee la compatibiliter de clip */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#What-do-u-want-to-eat #title-of-Resto .fa-regular:active {
   background: -webkit-linear-gradient(#ff79da, #9356dc);
   display: block;
   font-weight: bold;
