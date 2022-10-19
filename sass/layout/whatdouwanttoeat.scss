@@ -7,7 +7,7 @@
   padding-bottom: 64px;
   #title-of-Resto {
     @include Shrikhand;
-    font-size: 20px;
+    font-size: 18px;
     font-style: italic;
     display: flex;
     align-items: center;
@@ -15,6 +15,7 @@
     padding-left: 16px;
     margin-bottom: 0;
     margin-top: -32px;
+
     @include heart;
   }
   .choice {

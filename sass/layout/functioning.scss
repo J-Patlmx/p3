@@ -11,7 +11,13 @@
     gap: 32px;
     padding: 24px;
     border-radius: 24px;
+    // align-items: center;
+    // justify-content: center;
+    text-align: center;
     @include boxShadowA;
+    i {
+      color: $color-grisbackground;
+    }
     &:hover {
       background-color: rgba(146, 86, 220, 0.336);
       border: 1px solid transparent;
@@ -31,7 +37,7 @@
 
   .stepNumber {
     position: relative;
-    left: 5px;
     color: white;
+    text-align: center;
   }
 }

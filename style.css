@@ -268,7 +268,11 @@ header .fa-arrow-left {
   gap: 32px;
   padding: 24px;
   border-radius: 24px;
+  text-align: center;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+}
+.fonctionnement .step i {
+  color: #d3d3d3;
 }
 .fonctionnement .step:hover {
   background-color: rgba(146, 86, 220, 0.336);
@@ -287,8 +291,8 @@ header .fa-arrow-left {
 }
 .fonctionnement .stepNumber {
   position: relative;
-  left: 5px;
   color: white;
+  text-align: center;
 }
 
 /* RESTAURANT*/
@@ -345,6 +349,14 @@ header .fa-arrow-left {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+#Restaurant .restaurant-cards .fa-regular:active {
+  background: -webkit-linear-gradient(#ff79da, #9356dc);
+  display: block;
+  font-weight: bold;
+  /* TODO reglee la compatibiliter de clip */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 #Restaurant .restaurant-cards .status {
   position: absolute;
   text-align: center;
@@ -384,7 +396,7 @@ header .fa-arrow-left {
 }
 #What-do-u-want-to-eat #title-of-Resto {
   font-family: "Shrikhand", cursive;
-  font-size: 20px;
+  font-size: 18px;
   font-style: italic;
   display: flex;
   align-items: center;
@@ -399,6 +411,14 @@ header .fa-arrow-left {
   cursor: pointer;
 }
 #What-do-u-want-to-eat #title-of-Resto .fa-regular:hover {
+  background: -webkit-linear-gradient(#ff79da, #9356dc);
+  display: block;
+  font-weight: bold;
+  /* TODO reglee la compatibiliter de clip */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#What-do-u-want-to-eat #title-of-Resto .fa-regular:active {
   background: -webkit-linear-gradient(#ff79da, #9356dc);
   display: block;
   font-weight: bold;
