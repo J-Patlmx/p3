@@ -15,7 +15,6 @@
     padding-left: 16px;
     margin-bottom: 0;
     margin-top: -32px;
-
     @include heart;
   }
   .choice {
@@ -39,8 +38,10 @@
     left: calc(100% / 4);
     margin-top: 32px;
   }
+  // les plats on un comportement bizarre au chargement
   .green-Line-deco {
-    padding-bottom: 8px;
+    padding-bottom: 20px;
+    padding-bottom: 20px;
     padding-left: 8px;
     h2 {
       margin: 0;

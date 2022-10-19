@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"); /* ANIMATION LOADING */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+a {
+  text-decoration: none;
+}
+
+/* ANIMATION LOADING */
 .loader {
   background-color: white;
   position: fixed;
@@ -446,7 +451,8 @@ header .fa-arrow-left {
   box-shadow: 4px 6px 8px gray;
 }
 #What-do-u-want-to-eat .green-Line-deco {
-  padding-bottom: 8px;
+  padding-bottom: 20px;
+  padding-bottom: 20px;
   padding-left: 8px;
 }
 #What-do-u-want-to-eat .green-Line-deco h2 {
