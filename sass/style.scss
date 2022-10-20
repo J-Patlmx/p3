@@ -47,14 +47,14 @@ body {
   /* RESTAURANT*/
   #Restaurant {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 
     #titleofrestaurantsection {
       width: 100%;
     }
     .restaurant-cards {
-      flex: 1;
+      width: 45%;
+      justify-content: space-between;
 
       .infoCards {
         padding-left: 1%;
@@ -151,5 +151,8 @@ body {
     .step {
       padding: 24px;
     }
+  }
+  .restaurant-cards {
+    flex: 1;
   }
 }
