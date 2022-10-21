@@ -34,20 +34,21 @@
 }
 
 @mixin heart {
-  .fa-regular {
+  span {
     position: relative;
     right: 10%;
     cursor: pointer;
   }
-  .fa-regular:hover {
+  span:hover .fa-regular {
     background: -webkit-linear-gradient(
+      65deg,
       $color-rosesecondaire,
-      $color-violetprimaire
+      $color-violetprimaire 75%
     );
     display: block;
     font-weight: bold;
-    /* TODO reglee la compatibiliter de clip */
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: heart-appearence 0.8s ease-in-out;
   }
 }

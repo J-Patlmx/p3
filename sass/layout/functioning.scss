@@ -14,10 +14,10 @@
     text-align: center;
     @include boxShadowA;
     i {
-      color: $color-grisbackground;
+      color: gray;
     }
     &:hover {
-      background-color: rgba(146, 86, 220, 0.336);
+      background-color: rgba(120, 10, 133, 0.1);
       border: 1px solid transparent;
       i {
         color: $color-violetprimaire;

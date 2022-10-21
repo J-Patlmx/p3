@@ -157,6 +157,18 @@
 }
 
 /*FIN ANIMATION CHECK MENU*/
+/* ANIMATION HEART APPAERANCE*/
+@keyframes heart-appearence {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+}
+/*FIN ANIMATION HEART APPAERANCE*/
 @media (prefers-reduced-motion: reduce) {
   .animation {
     animation: none;
@@ -272,10 +284,10 @@ header .fa-arrow-left {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
 }
 .fonctionnement .step i {
-  color: #d3d3d3;
+  color: gray;
 }
 .fonctionnement .step:hover {
-  background-color: rgba(146, 86, 220, 0.336);
+  background-color: rgba(120, 10, 133, 0.1);
   border: 1px solid transparent;
 }
 .fonctionnement .step:hover i {
@@ -336,18 +348,18 @@ header .fa-arrow-left {
   flex: 2;
   line-height: 0;
 }
-#Restaurant .restaurant-cards .fa-regular {
+#Restaurant .restaurant-cards span {
   position: relative;
   right: 10%;
   cursor: pointer;
 }
-#Restaurant .restaurant-cards .fa-regular:hover {
-  background: -webkit-linear-gradient(#ff79da, #9356dc);
+#Restaurant .restaurant-cards span:hover .fa-regular {
+  background: -webkit-linear-gradient(65deg, #ff79da, #9356dc 75%);
   display: block;
   font-weight: bold;
-  /* TODO reglee la compatibiliter de clip */
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: heart-appearence 0.8s ease-in-out;
 }
 #Restaurant .restaurant-cards .status {
   position: absolute;
@@ -398,18 +410,18 @@ header .fa-arrow-left {
   margin-bottom: 0;
   margin-top: -32px;
 }
-#What-do-u-want-to-eat #title-of-Resto .fa-regular {
+#What-do-u-want-to-eat #title-of-Resto span {
   position: relative;
   right: 10%;
   cursor: pointer;
 }
-#What-do-u-want-to-eat #title-of-Resto .fa-regular:hover {
-  background: -webkit-linear-gradient(#ff79da, #9356dc);
+#What-do-u-want-to-eat #title-of-Resto span:hover .fa-regular {
+  background: -webkit-linear-gradient(65deg, #ff79da, #9356dc 75%);
   display: block;
   font-weight: bold;
-  /* TODO reglee la compatibiliter de clip */
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: heart-appearence 0.8s ease-in-out;
 }
 #What-do-u-want-to-eat .choice {
   background-color: white;

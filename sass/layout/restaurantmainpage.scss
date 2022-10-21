@@ -38,18 +38,9 @@
       flex: 2;
       line-height: 0;
     }
+
     @include heart;
-    //.fa-regular {
-    // position: relative;
-    // right: 10%;
-    // color: black;
-    // transition: 1s ease-out;
-    // &:hover {
-    //   color: $color-rosesecondaire;
-    //   font-weight: bold;
-    //   cursor: pointer;
-    // }
-    //}
+
     .status {
       position: absolute;
       text-align: center;

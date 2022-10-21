@@ -153,6 +153,19 @@
 
 /*FIN ANIMATION CHECK MENU*/
 
+/* ANIMATION HEART APPAERANCE*/
+@keyframes heart-appearence {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+}
+/*FIN ANIMATION HEART APPAERANCE*/
+
 @media (prefers-reduced-motion: reduce) {
   .animation {
     animation: none;
