@@ -358,6 +358,7 @@ header .fa-arrow-left {
   display: block;
   font-weight: bold;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: heart-appearence 0.8s ease-in-out;
 }
@@ -420,6 +421,7 @@ header .fa-arrow-left {
   display: block;
   font-weight: bold;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: heart-appearence 0.8s ease-in-out;
 }
