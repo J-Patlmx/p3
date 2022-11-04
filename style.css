@@ -52,13 +52,13 @@
     top: 0%;
   }
 }
-.circle:nth-child(1) {
+.circle:nth-child(2) {
   left: 45%;
   animation-delay: 0.2s;
   background-color: #ff79da;
 }
 
-.circle:nth-child(2) {
+.circle:nth-child(3) {
   left: auto;
   right: 15%;
   animation-delay: 0.3s;
@@ -90,7 +90,6 @@
     opacity: 1;
   }
 }
-/*
 /*FIN ANIMATION CHARGEMENT MENU*/
 /*ANIMATION CHECK MENU*/
 .choice-check {

@@ -24,6 +24,8 @@ body {
 /*TODO finir les mediaQueries 
   les mettre dans le bon dossier
   */
+// ici commence la Mq tablette
+
 @media (min-width: 768px) {
   #reserved-menu-tittle {
     font-size: 40px;
@@ -136,6 +138,9 @@ body {
     }
   }
 }
+
+// ici commence la Mq desktop
+
 @media (min-width: 1024px) {
   #reserved-menu-tittle {
     font-size: 44px;
