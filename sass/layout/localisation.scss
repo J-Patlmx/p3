@@ -6,7 +6,6 @@
   display: flex;
   justify-content: center;
   background-color: $color-grisbackground;
-  // position: relative;
   align-items: center;
   gap: 16px;
   padding-left: 32px;
@@ -16,6 +15,30 @@
   #inputForm-localisation {
     border: none;
     background-color: $color-grisbackground;
+    &::-webkit-input-placeholder {
+      font-weight: bolder;
+      font-size: 16px;
+      color: black;
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      font-weight: bolder;
+      font-size: 16px;
+      color: black;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      font-weight: bolder;
+      font-size: 16px;
+      color: black;
+      opacity: 1;
+    }
+    &::-ms-input-placeholder {
+      font-weight: bolder;
+      font-size: 16px;
+      color: black;
+      opacity: 1;
+    }
     &::placeholder {
       font-weight: bolder;
       font-size: 16px;

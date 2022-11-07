@@ -38,7 +38,6 @@
     left: calc(100% / 4);
     margin-top: 32px;
   }
-  // les plats on un comportement bizarre au chargement
   .green-Line-deco {
     padding-bottom: 20px;
     padding-top: 20px;
@@ -66,9 +65,9 @@
   word-wrap: break-Word;
   overflow: hidden;
   font-size: 14px;
-}
 
-/*  text-overflow: ellipsis;
+  /*  text-overflow: ellipsis;
 display: inline-block;
 white-space: nowrap;
 overflow: hidden;*/
+}

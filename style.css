@@ -7,6 +7,7 @@
   width: 100%;
   opacity: 0.9;
   transform-origin: top;
+  -webkit-animation: magic-disappearance 0.9ms 3s forwards;
   animation: magic-disappearance 0.9ms 3s forwards;
 }
 .loader .Loader-bounce-jp {
@@ -25,15 +26,40 @@
   background-color: #9356dc;
   left: 15%;
   transform-origin: 50%;
+  -webkit-animation: circle 0.5s alternate 6 ease-in-out;
   animation: circle 0.5s alternate 6 ease-in-out;
 }
 
+@-webkit-keyframes magic-disappearance {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 @keyframes magic-disappearance {
   0% {
     transform: scale(1);
   }
   100% {
     transform: scale(0);
+  }
+}
+@-webkit-keyframes circle {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scale(1.7);
+  }
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scale(1);
+  }
+  100% {
+    top: 0%;
   }
 }
 @keyframes circle {
@@ -54,6 +80,7 @@
 }
 .circle:nth-child(2) {
   left: 45%;
+  -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
   background-color: #ff79da;
 }
@@ -61,6 +88,7 @@
 .circle:nth-child(3) {
   left: auto;
   right: 15%;
+  -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
   background-color: #99e2d0;
 }
@@ -68,18 +96,32 @@
 /*FIN ANIMATION LOADING*/
 /*ANIMATION CHARGEMENT MENU*/
 .choice {
+  -webkit-animation: here-is-the-menu 2s;
   animation: here-is-the-menu 2s;
 }
 .choice.delayChoiceB {
+  -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
 .choice.delayChoiceC {
+  -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 .choice.delayChoiceD {
+  -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
 
+@-webkit-keyframes here-is-the-menu {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @keyframes here-is-the-menu {
   0% {
     transform: translateY(50px);
@@ -113,6 +155,7 @@
 .choice:hover .fa-circle-check {
   transform: rotate(-360deg);
   transition-duration: 0.4s;
+  -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 
@@ -159,6 +202,16 @@
 
 /*FIN ANIMATION CHECK MENU*/
 /* ANIMATION HEART APPAERANCE*/
+@-webkit-keyframes heart-appearence {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+}
 @keyframes heart-appearence {
   0% {
     transform: scale(0.9);
@@ -172,6 +225,7 @@
 /*FIN ANIMATION HEART APPAERANCE*/
 @media (prefers-reduced-motion: reduce) {
   .animation {
+    -webkit-animation: none;
     animation: none;
   }
 }
@@ -208,7 +262,9 @@ header .fa-arrow-left {
 .hero {
   height: 200px;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
 }
 
@@ -230,6 +286,30 @@ header .fa-arrow-left {
 #localisation #inputForm-localisation {
   border: none;
   background-color: #d3d3d3;
+}
+#localisation #inputForm-localisation::-webkit-input-placeholder {
+  font-weight: bolder;
+  font-size: 16px;
+  color: black;
+  opacity: 1;
+}
+#localisation #inputForm-localisation::-moz-placeholder {
+  font-weight: bolder;
+  font-size: 16px;
+  color: black;
+  opacity: 1;
+}
+#localisation #inputForm-localisation:-ms-input-placeholder {
+  font-weight: bolder;
+  font-size: 16px;
+  color: black;
+  opacity: 1;
+}
+#localisation #inputForm-localisation::-ms-input-placeholder {
+  font-weight: bolder;
+  font-size: 16px;
+  color: black;
+  opacity: 1;
 }
 #localisation #inputForm-localisation::placeholder {
   font-weight: bolder;
@@ -260,11 +340,13 @@ header .fa-arrow-left {
   font-size: 18px;
   border: none;
   box-shadow: 4px 6px 8px rgb(158, 155, 155);
+  -webkit-filter: contrast(110%);
   filter: contrast(110%);
   cursor: pointer;
 }
 .reserved-menu .degrade:hover {
   transform: scale(1.02);
+  -webkit-filter: contrast(150%);
   filter: contrast(150%);
   box-shadow: 4px 6px 8px gray;
 }
@@ -336,7 +418,9 @@ header .fa-arrow-left {
   width: 100%;
   height: 192px;
   border-radius: 16px 16px 0 0;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
 }
 #Restaurant .restaurant-cards .infoCards {
@@ -361,6 +445,7 @@ header .fa-arrow-left {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-animation: heart-appearence 0.8s ease-in-out;
   animation: heart-appearence 0.8s ease-in-out;
 }
 #Restaurant .restaurant-cards .status {
@@ -424,6 +509,7 @@ header .fa-arrow-left {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-animation: heart-appearence 0.8s ease-in-out;
   animation: heart-appearence 0.8s ease-in-out;
 }
 #What-do-u-want-to-eat .choice {
@@ -448,6 +534,7 @@ header .fa-arrow-left {
   font-size: 18px;
   border: none;
   box-shadow: 4px 6px 8px rgb(158, 155, 155);
+  -webkit-filter: contrast(110%);
   filter: contrast(110%);
   cursor: pointer;
   padding: 8px 32px;
@@ -457,6 +544,7 @@ header .fa-arrow-left {
 }
 #What-do-u-want-to-eat .degrade:hover {
   transform: scale(1.02);
+  -webkit-filter: contrast(150%);
   filter: contrast(150%);
   box-shadow: 4px 6px 8px gray;
 }
@@ -486,12 +574,12 @@ header .fa-arrow-left {
   word-wrap: break-Word;
   overflow: hidden;
   font-size: 14px;
+  /*  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;*/
 }
 
-/*  text-overflow: ellipsis;
-display: inline-block;
-white-space: nowrap;
-overflow: hidden;*/
 footer {
   background-color: rgb(94, 93, 93);
   color: white;
@@ -544,128 +632,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/*TODO finir les mediaQueries 
-  les mettre dans le bon dossier
-  */
-@media (min-width: 768px) {
-  #reserved-menu-tittle {
-    font-size: 40px;
-  }
-  #reserved-menu-subTitle {
-    font-size: 24px;
-  }
-  #step {
-    display: flex;
-    padding-left: 8px;
-    align-items: center;
-    justify-content: center;
-  }
-  #step .step {
-    flex: 1;
-    gap: 10px;
-    padding: 10px;
-  }
-  /* RESTAURANT*/
-  #Restaurant {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #Restaurant #titleofrestaurantsection {
-    width: 100%;
-  }
-  #Restaurant .restaurant-cards {
-    width: 45%;
-    justify-content: space-between;
-  }
-  #Restaurant .restaurant-cards .infoCards {
-    padding-left: 1%;
-  }
-  #Restaurant .restaurant-cards .infoCards-WithoutHeart h3 {
-    font-size: 16px;
-  }
-  #Restaurant .restaurant-cards .fa-regular {
-    right: 3%;
-  }
-  /*-----------------------*/
-  #What-do-u-want-to-eat {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: -32px;
-    padding-bottom: 0;
-  }
-  #What-do-u-want-to-eat #title-of-Resto {
-    width: 100%;
-    padding: 16px;
-    margin-top: 8px;
-    font-size: 32px;
-  }
-  #What-do-u-want-to-eat .menu {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #What-do-u-want-to-eat .Main-Course--spe {
-    margin-top: 0;
-  }
-  #What-do-u-want-to-eat .Dessert--spe {
-    margin: 0;
-  }
-  #What-do-u-want-to-eat .choice {
-    width: 330px;
-  }
-  #What-do-u-want-to-eat .choice:hover {
-    transform: scale(1);
-  }
-  #What-do-u-want-to-eat .degrade {
-    width: 100%;
-    border-radius: 0;
-    left: 0;
-    margin-bottom: 16px;
-    margin-top: 0;
-  }
-  footer {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 16px;
-  }
-  footer #titleOf-Footer {
-    font-size: 28px;
-  }
-  footer #propose {
-    margin-bottom: 0;
-  }
-  footer #partnership {
-    margin-bottom: 0;
-  }
-  footer #legal {
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-  footer #contactFooter {
-    margin-bottom: 0;
-  }
-}
-@media (min-width: 1024px) {
-  #reserved-menu-tittle {
-    font-size: 44px;
-  }
-  #reserved-menu-subTitle {
-    font-size: 32px;
-  }
-  #reserved-menu-subTitle br {
-    display: none;
-  }
-  #step .step {
-    padding: 24px;
-  }
-  .restaurant-cards {
-    flex: 1;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

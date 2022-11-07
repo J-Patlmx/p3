@@ -13,16 +13,15 @@
   font-size: 18px;
   border: none;
   box-shadow: 4px 6px 8px rgb(158, 155, 155);
+  -webkit-filter: contrast(110%);
   filter: contrast(110%);
   cursor: pointer;
   &:hover {
     transform: scale(1.02);
+    -webkit-filter: contrast(150%);
     filter: contrast(150%);
     box-shadow: 4px 6px 8px gray;
   }
-  //   a {
-  //   text-decoration: none;
-  // }
 }
 
 @mixin boxShadowA {
@@ -50,6 +49,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-animation: heart-appearence 0.8s ease-in-out;
     animation: heart-appearence 0.8s ease-in-out;
   }
 }

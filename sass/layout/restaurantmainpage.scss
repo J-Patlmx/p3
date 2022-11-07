@@ -25,7 +25,9 @@
       width: 100%;
       height: 192px;
       border-radius: 16px 16px 0 0;
+      -o-object-fit: cover;
       object-fit: cover;
+      -o-object-position: center;
       object-position: center;
     }
     .infoCards {

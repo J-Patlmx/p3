@@ -7,6 +7,7 @@
   width: 100%;
   opacity: 0.9;
   transform-origin: top;
+  -webkit-animation: magic-disappearance 0.9ms 3s forwards;
   animation: magic-disappearance 0.9ms 3s forwards;
   .Loader-bounce-jp {
     width: 200px;
@@ -24,7 +25,16 @@
     background-color: $color-violetprimaire;
     left: 15%;
     transform-origin: 50%;
+    -webkit-animation: circle 0.5s alternate 6 ease-in-out;
     animation: circle 0.5s alternate 6 ease-in-out;
+  }
+}
+@-webkit-keyframes magic-disappearance {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
   }
 }
 @keyframes magic-disappearance {
@@ -33,6 +43,24 @@
   }
   100% {
     transform: scale(0);
+  }
+}
+@-webkit-keyframes circle {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scale(1.7);
+  }
+
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scale(1);
+  }
+
+  100% {
+    top: 0%;
   }
 }
 @keyframes circle {
@@ -56,6 +84,7 @@
 // permet de cibler le 2eme enfant
 .circle:nth-child(2) {
   left: 45%;
+  -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
   background-color: $color-rosesecondaire;
 }
@@ -64,6 +93,7 @@
 .circle:nth-child(3) {
   left: auto;
   right: 15%;
+  -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
   background-color: $color-verttertiaire;
 }
@@ -72,15 +102,30 @@
 /*ANIMATION CHARGEMENT MENU*/
 
 .choice {
+  -webkit-animation: here-is-the-menu 2s;
   animation: here-is-the-menu 2s;
   &.delayChoiceB {
+    -webkit-animation-delay: 0.3s;
     animation-delay: 0.3s;
   }
   &.delayChoiceC {
+    -webkit-animation-delay: 0.6s;
     animation-delay: 0.6s;
   }
   &.delayChoiceD {
+    -webkit-animation-delay: 0.9s;
     animation-delay: 0.9s;
+  }
+}
+@-webkit-keyframes here-is-the-menu {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 @keyframes here-is-the-menu {
@@ -117,6 +162,7 @@
 .choice:hover .fa-circle-check {
   transform: rotate(-360deg);
   transition-duration: 0.4s;
+  -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 .choice-check::after.price {
@@ -157,6 +203,16 @@
 /*FIN ANIMATION CHECK MENU*/
 
 /* ANIMATION HEART APPAERANCE*/
+@-webkit-keyframes heart-appearence {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+}
 @keyframes heart-appearence {
   0% {
     transform: scale(0.9);
@@ -172,6 +228,7 @@
 // permet de ne pas lancer les animation quand le users soit ne pas en avoir
 @media (prefers-reduced-motion: reduce) {
   .animation {
+    -webkit-animation: none;
     animation: none;
   }
 }

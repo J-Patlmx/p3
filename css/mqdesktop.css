@@ -1,0 +1,19 @@
+@media (min-width: 1024px) {
+  #reserved-menu-tittle {
+    font-size: 44px;
+  }
+  #reserved-menu-subTitle {
+    font-size: 32px;
+  }
+  #reserved-menu-subTitle br {
+    display: none;
+  }
+  #step .step {
+    padding: 24px;
+  }
+  .restaurant-cards {
+    flex: 1;
+  }
+}
+
+/*# sourceMappingURL=mqdesktop.css.map */

@@ -1,0 +1,103 @@
+@media (min-width: 768px) {
+  #reserved-menu-tittle {
+    font-size: 40px;
+  }
+  #reserved-menu-subTitle {
+    font-size: 24px;
+  }
+  #step {
+    display: flex;
+    padding-left: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  #step .step {
+    flex: 1;
+    gap: 10px;
+    padding: 10px;
+  }
+  /* RESTAURANT*/
+  #Restaurant {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #Restaurant #titleofrestaurantsection {
+    width: 100%;
+  }
+  #Restaurant .restaurant-cards {
+    width: 45%;
+    justify-content: space-between;
+  }
+  #Restaurant .restaurant-cards .infoCards {
+    padding-left: 1%;
+  }
+  #Restaurant .restaurant-cards .infoCards-WithoutHeart h3 {
+    font-size: 16px;
+  }
+  #Restaurant .restaurant-cards .fa-regular {
+    right: 3%;
+  }
+  /*-----------------------*/
+  #What-do-u-want-to-eat {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -32px;
+    padding-bottom: 0;
+  }
+  #What-do-u-want-to-eat #title-of-Resto {
+    width: 100%;
+    padding: 16px;
+    margin-top: 8px;
+    font-size: 32px;
+  }
+  #What-do-u-want-to-eat .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #What-do-u-want-to-eat .Main-Course--spe {
+    margin-top: 0;
+  }
+  #What-do-u-want-to-eat .Dessert--spe {
+    margin: 0;
+  }
+  #What-do-u-want-to-eat .choice {
+    width: 330px;
+  }
+  #What-do-u-want-to-eat .choice:hover {
+    transform: scale(1);
+  }
+  #What-do-u-want-to-eat .degrade {
+    width: 100%;
+    border-radius: 0;
+    left: 0;
+    margin-bottom: 16px;
+    margin-top: 0;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+  }
+  footer #titleOf-Footer {
+    font-size: 28px;
+  }
+  footer #propose {
+    margin-bottom: 0;
+  }
+  footer #partnership {
+    margin-bottom: 0;
+  }
+  footer #legal {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  footer #contactFooter {
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=mqtablette.css.map */
