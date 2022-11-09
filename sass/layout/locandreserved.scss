@@ -47,3 +47,21 @@
     }
   }
 }
+
+.reserved-menu {
+  text-align: center;
+  background-color: $color-grisclairebackground;
+  padding: 16px;
+  padding-bottom: 64px;
+  #reserved-menu-tittle {
+    font-size: 32px;
+  }
+  #reserved-menu-subTitle {
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  & .degrade {
+    @include btn;
+  }
+}
