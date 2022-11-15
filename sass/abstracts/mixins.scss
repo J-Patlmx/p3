@@ -44,6 +44,40 @@
     position: absolute;
     width: 100%;
     right: 10%;
+    bottom: 10%;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  span:hover .fa-regular {
+    @include bg--heart;
+    display: block;
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: heart-appearence 0.8s ease-in-out;
+    animation: heart-appearence 0.8s ease-in-out;
+  }
+  span:active .fa-regular {
+    @include bg--heart;
+    display: block;
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: heart-appearence 0.4s ease-in-out;
+    animation: heart-appearence 0.4s ease-in-out;
+  }
+}
+@mixin heart--hero {
+  span {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    right: 10%;
+    top: 2.5%;
+    align-items: center;
     justify-content: flex-end;
     cursor: pointer;
   }

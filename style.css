@@ -438,6 +438,8 @@ header .fa-arrow-left {
   position: absolute;
   width: 100%;
   right: 10%;
+  bottom: 10%;
+  align-items: center;
   justify-content: flex-end;
   cursor: pointer;
 }
@@ -458,8 +460,8 @@ header .fa-arrow-left {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: heart-appearence 0.8s ease-in-out;
-  animation: heart-appearence 0.8s ease-in-out;
+  -webkit-animation: heart-appearence 0.4s ease-in-out;
+  animation: heart-appearence 0.4s ease-in-out;
 }
 #Restaurant .restaurant-cards .status {
   position: absolute;
@@ -515,6 +517,8 @@ header .fa-arrow-left {
   position: absolute;
   width: 100%;
   right: 10%;
+  top: 2.5%;
+  align-items: center;
   justify-content: flex-end;
   cursor: pointer;
 }
