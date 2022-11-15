@@ -434,11 +434,24 @@ header .fa-arrow-left {
   line-height: 0;
 }
 #Restaurant .restaurant-cards span {
-  position: relative;
+  display: flex;
+  position: absolute;
+  width: 100%;
   right: 10%;
+  justify-content: flex-end;
   cursor: pointer;
 }
 #Restaurant .restaurant-cards span:hover .fa-regular {
+  background: -webkit-linear-gradient(65deg, #ff79da, #9356dc 75%);
+  display: block;
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: heart-appearence 0.8s ease-in-out;
+  animation: heart-appearence 0.8s ease-in-out;
+}
+#Restaurant .restaurant-cards span:active .fa-regular {
   background: -webkit-linear-gradient(65deg, #ff79da, #9356dc 75%);
   display: block;
   font-weight: bold;
@@ -498,11 +511,24 @@ header .fa-arrow-left {
   margin-top: -32px;
 }
 #What-do-u-want-to-eat #title-of-Resto span {
-  position: relative;
+  display: flex;
+  position: absolute;
+  width: 100%;
   right: 10%;
+  justify-content: flex-end;
   cursor: pointer;
 }
 #What-do-u-want-to-eat #title-of-Resto span:hover .fa-regular {
+  background: -webkit-linear-gradient(65deg, #ff79da, #9356dc 75%);
+  display: block;
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: heart-appearence 0.8s ease-in-out;
+  animation: heart-appearence 0.8s ease-in-out;
+}
+#What-do-u-want-to-eat #title-of-Resto span:active .fa-regular {
   background: -webkit-linear-gradient(65deg, #ff79da, #9356dc 75%);
   display: block;
   font-weight: bold;

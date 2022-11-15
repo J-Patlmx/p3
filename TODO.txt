@@ -1,13 +1,1 @@
 
-   /* TODO reglee la compatibiliter de clip
-    */
-
-  /*TODO finir les mediaQueries 
-  les mettre dans le bon dossier
-  ajouter un style diff entre tablette et desktop( maybe title)
-  */
-
-/*TODO fix l'apparence du h5:
-     word-wrap
-     overflow-wrap 
-     */

@@ -4,7 +4,13 @@
     $color-violetprimaire
   );
 }
-
+@mixin bg--heart {
+  background: -webkit-linear-gradient(
+    65deg,
+    $color-rosesecondaire,
+    $color-violetprimaire 75%
+  );
+}
 @mixin btn {
   @include bg--gradient;
   border-radius: 32px;
@@ -34,16 +40,25 @@
 
 @mixin heart {
   span {
-    position: relative;
+    display: flex;
+    position: absolute;
+    width: 100%;
     right: 10%;
+    justify-content: flex-end;
     cursor: pointer;
   }
   span:hover .fa-regular {
-    background: -webkit-linear-gradient(
-      65deg,
-      $color-rosesecondaire,
-      $color-violetprimaire 75%
-    );
+    @include bg--heart;
+    display: block;
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: heart-appearence 0.8s ease-in-out;
+    animation: heart-appearence 0.8s ease-in-out;
+  }
+  span:active .fa-regular {
+    @include bg--heart;
     display: block;
     font-weight: bold;
     background-clip: text;
